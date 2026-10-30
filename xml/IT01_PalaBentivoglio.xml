@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+
+    <!-- Identificatore univoco locale dell'item -->
+    <dc:identifier>IT01</dc:identifier>
+
+    <!-- Titolo dell'opera e titolo alternativo -->
+    <dc:title>Pala Bentivoglio</dc:title>
+    <dcterms:alternative>Madonna con Bambino in trono e la famiglia di Giovanni II Bentivoglio</dcterms:alternative>
+
+    <!-- Autore dell'opera e Controllo Autorità VIAF -->
+    <dc:creator>Costa, Lorenzo (1460-1535)</dc:creator>
+    <dcterms:creator xsi:type="dcterms:URI">http://viaf.org/viaf/47035057</dcterms:creator>
+
+    <!-- Committente e Controllo Autorità Wikidata -->
+    <dcterms:contributor>Bentivoglio, Giovanni II</dcterms:contributor>
+    <dcterms:contributor xsi:type="dcterms:URI">https://www.wikidata.org/wiki/Q194996</dcterms:contributor>
+
+    <!-- Datazione -->
+    <dc:date>1488</dc:date>
+    <dcterms:created>1488</dcterms:created>
+
+    <!-- Tipologia di risorsa e oggetto -->
+    <dc:type>Image</dc:type>
+    <dc:type>Pittura su tavola</dc:type>
+
+    <!-- Materia, tecnica e formato -->
+    <dc:format>Olio su tavola</dc:format>
+    <dcterms:medium>Pittura a olio</dcterms:medium>
+    <dcterms:medium xsi="dcterms:URI">http://vocab.getty.edu/page/aat/300178684</dcterms:medium>
+
+    <!-- Descrizione sintetica dell'opera e del contesto politico-religioso -->
+    <dc:description>Grande pala d'altare commissionata da Giovanni II Bentivoglio a Lorenzo Costa come ex-voto per lo scampato pericolo dalla congiura dei Malvezzi del 1488. Raffigura la Vergine col Bambino in trono circondata da Giovanni II, dalla moglie Ginevra Sforza e dai loro undici figli.</dc:description>
+
+    <!-- Parole chiave e soggetti semantici -->
+    <dc:subject>Rinascimento bolognese</dc:subject>
+    <dc:subject>Giovanni II Bentivoglio</dc:subject>
+    <dc:subject>Committenza artistica</dc:subject>
+    <dc:subject>Ritrattistica di famiglia</dc:subject>
+    <dc:subject>Pala d'altare</dc:subject>
+
+    <!-- Collocazione fisica e riferimento GeoNames -->
+    <dc:source>Cappella Bentivoglio, Chiesa di San Giacomo Maggiore, Bologna</dc:source>
+    <dcterms:spatial xsi:type="dcterms:URI">https://www.geonames.org/11847518/</dcterms:spatial>
+    <dcterms:spatial>Piazza Gioacchino Rossini, Bologna</dcterms:spatial>
+
+    <!-- Scheda di catalogo esterna di riferimento-->
+    <dcterms:references xsi:type="dcterms:URI">https://catalogo.fondazionezeri.unibo.it/scheda/opera/31197/</dcterms:references>
+
+    <!-- Lingua -->
+    <dc:language>it</dc:language>
+
+    <!-- Relazione di appartenenza alla collezione digitale -->
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+
+    <!-- Diritti e Licenza d'uso -->
+    <dc:rights>Tutti i diritti riservati / Pubblico Dominio per l'opera originale</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>

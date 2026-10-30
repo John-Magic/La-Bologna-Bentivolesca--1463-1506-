@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+
+    <dc:identifier>IT11</dc:identifier>
+    <dc:title>Affresco della Battaglia della Riccardina</dc:title>
+    <dc:creator>il Romanino (Girolamo da Romano, ca. 1484-1566)</dc:creator>
+    <dcterms:contributor>Martinengo-Colleoni, Alessandro</dcterms:contributor>
+    <dcterms:contributor xsi:type="dcterms:URI">http://viaf.org/viaf/2407176726002824980000/</dcterms:contributor>
+    <dc:date>1520-1530</dc:date>
+    <dcterms:created>1520-1530</dcterms:created>
+    <dc:type>Image</dc:type>
+    <dc:type>Affresco</dc:type>
+    <dc:format>Dipinto murale / Affresco</dc:format>
+    <dc:description>Dipinto murale ad affresco del Romanino raffigurante lo scontro campale della Riccardina (25 luglio 1467), fondamentale per gli equilibri della Bologna bentivolesca e la storia condottieristica del XV secolo.</dc:description>
+    <dc:subject>Battaglia della Riccardina</dc:subject>
+    <dc:subject>Battaglia della Molinella</dc:subject>
+    <dc:subject>Bartolomeo Colleoni</dc:subject>
+    <dc:subject>Castello di Malpaga</dc:subject>
+    <dc:subject>Giovanni II Bentivoglio</dc:subject>
+    <dc:source>Castello di Malpaga, Cavernago (Bergamo)</dc:source>
+    <dcterms:spatial>Molinella</dcterms:spatial>
+    <dc:language>it</dc:language>
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+    <dc:rights>Tutti i diritti riservati / Pubblico Dominio per l'opera originale</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>

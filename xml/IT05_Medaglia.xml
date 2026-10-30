@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+
+    <dc:identifier>IT05</dc:identifier>
+    <dc:title>Medaglia commemorativa di Giovanni II Bentivoglio</dc:title>
+    <dc:creator>Savelli, Sperandio (ca. 1431-1504)</dc:creator>
+    <dcterms:contributor>Bentivoglio, Giovanni II</dcterms:contributor>
+    <dc:date>1462</dc:date>
+    <dcterms:created>1462</dcterms:created>
+    <dc:type>PhysicalObject</dc:type>
+    <dc:type>Medaglia</dc:type>
+    <dc:format>Bronzo / Scultura e fusione in metallo</dc:format>
+    <dc:description>Medaglia celebrativa in bronzo fuso realizzata da Sperandio Savelli raffigurante sul dritto il busto di profilo di Giovanni II Bentivoglio con berretto e sul rovescio una figura allegorica e cavalleresca a simboleggiare il potere militare della signoria.</dc:description>
+    <dc:subject>Giovanni II Bentivoglio</dc:subject>
+    <dc:subject>Medaglistica rinascimentale</dc:subject>
+    <dc:subject>Numismatica bolognese</dc:subject>
+    <dc:subject>Rinascimento emiliano</dc:subject>
+    <dc:source>Museo Civico Medievale, Via Manzoni 4, Bologna (BO), Italia</dc:source>
+    <dcterms:spatial>Strada San Donato (attuale Via Zamboni), Bologna</dcterms:spatial>
+    <dc:language>lat</dc:language>
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+    <dc:rights>Tutti i diritti riservati / Pubblico Dominio per l'opera originale</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>

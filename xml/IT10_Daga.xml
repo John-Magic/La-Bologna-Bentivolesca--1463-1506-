@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+
+    <dc:identifier>IT10</dc:identifier>
+    <dc:title>Daga Cinquedea</dc:title>
+    <dcterms:alternative>Daga a cinquedea con stemma Bentivoglio</dcterms:alternative>
+    <dc:creator>Armaiolo emiliano / nord-italiano</dc:creator>
+    <dcterms:contributor>Bentivoglio, Giovanni II</dcterms:contributor>
+    <dc:date>1480-1510</dc:date>
+    <dcterms:created>1480-1510</dcterms:created>
+    <dc:type>PhysicalObject</dc:type>
+    <dc:type>Arma</dc:type>
+    <dc:format>Arma bianca di rappresentanza in acciaio, avorio/osso e bronzo</dc:format>
+    <dc:description>Tipica daga rinascimentale con ampia lama triangolare a cinque dita, usata come prestigioso oggetto d'ostentazione e status symbol dalle élite aristrocratiche durante la signoria bentivolesca.</dc:description>
+    <dc:subject>Cinquedea</dc:subject>
+    <dc:subject>Armi rinascimentali</dc:subject>
+    <dc:subject>Museo Civico Medievale di Bologna</dc:subject>
+    <dc:subject>Cultura di corte</dc:subject>
+    <dc:subject>Rinascimento bolognese</dc:subject>
+    <dc:source>Museo Civico Medievale, Bologna</dc:source>
+    <dcterms:spatial>Strada San Donato (attuale Via Zamboni), Bologna</dcterms:spatial>
+    <dc:language>it</dc:language>
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+    <dc:rights>Tutti i diritti riservati / Pubblico Dominio per l'opera originale</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>

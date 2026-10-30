@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esplora la Rete e la Mappa | Bologna Bentivolesca</title>
+    
+    <!-- Bootstrap CSS 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <!-- Font Umanistici Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Bootstrap Icons & FontAwesome) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Leaflet CSS (Mappa Interattiva) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <!-- CSS Personalizzato Rinascimentale -->
+    <link rel="stylesheet" href="Style v3.css">
+
+    <!-- Icona Stemma Bentivoglio -->
+    <link rel="icon" type="image/icon" href="images/Arms_of_the_house_of_Bentivoglio.ico">
+</head>
+<body>
+
+    <!-- NAVBAR HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-umanistica sticky-top">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand brand-umanistico text-warning font-weight-bold" href="index.html" style="font-size: 1.5rem;">
+                <i class="fas fa-scroll mr-2"></i>La Bologna Bentivolesca
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto align-items-lg-center">
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="index.html">Home</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="contesto.html"><i class="bi bi-hourglass-split mr-1"></i>Contesto Storico</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="catalogo.html"><i class="bi bi-bank mr-1"></i>Catalogo Item</a></li>
+                    <li class="nav-item active mx-lg-1"><a class="nav-link px-lg-3" href="esplora.html"><i class="bi bi-diagram-3 mr-1"></i>Mappa & Grafo</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="metodologia.html">Metodologia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- INTESTAZIONE PAGINA -->
+    <div class="py-4 border-bottom" style="background-color: #EFE8D8; border-color: var(--bordo-pergamenato) !important;">
+        <div class="container-fluid mx-lg-4">
+            <h1 class="h2 mb-1">Mappa della Conoscenza & Geografia Urbana</h1>
+            <p class="text-muted mb-0 font-italic">Esplora le relazioni semantiche tra beni culturali, attori storici ed eventi, oppure collocali nello spazio urbano della Bologna del Quattrocento.</p>
+        </div>
+    </div>
+
+    <!-- AREA DI ESPLORAZIONE INTERATTIVA (MAPPA + GRAFO + SIDEBAR DETTAGLIO) -->
+    <main class="container-fluid py-4 mx-lg-4" style="max-width: 96%;">
+        <div class="row">
+            
+            <!-- COLONNA PRINCIPALE: MAPPA E GRAFO CON SELEZIONE A SCHEDE (BOOTSTRAP TABS) -->
+            <div class="col-lg-8 mb-4">
+                <div class="card card-rinascimento h-100 shadow-sm">
+                    
+                    <!-- HEADER CARD CON PULSANTI SWITCH (NAV-PILLS) -->
+                    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center" style="border-bottom: 2px solid var(--oro-rinascimentale, #FEE56E);">
+                        <span class="font-weight-bold text-warning" style="font-family:'Cormorant Garamond'; font-size: 1.2rem;">
+                            <i class="bi bi-diagram-3 mr-2"></i>Visualizzazione Interattiva
+                        </span>
+                        
+                        <!-- Tabs Bootstrap per alternare Mappa e Grafo -->
+                        <ul class="nav nav-pills card-header-pills" id="explorTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active btn-sm font-weight-bold" id="grafo-tab" data-toggle="tab" href="#vista-grafo" role="tab">
+                                    <i class="fas fa-project-diagram mr-1"></i> Grafo di Rete
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-sm font-weight-bold" id="mappa-tab" data-toggle="tab" href="#vista-mappa" role="tab">
+                                    <i class="fas fa-map-marked-alt mr-1"></i> Mappa Storica
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- CONTENUTO DELLE SCHEDE INTERATTIVE -->
+                    <div class="card-body p-0">
+                        <div class="tab-content" id="explorTabContent">
+                            
+                            <!-- 1. CONTENITORE GRAFO DI RETE (CYTOSCAPE.JS) -->
+                            <div class="tab-pane fade show active" id="vista-grafo" role="tabpanel">
+                                <div id="cy-network-container" style="height: 600px; width: 100%; background-color: #FAF6ED; position: relative;">
+                                    
+                                    <!-- Legenda dei Nodi stile Manoscritto -->
+                                    <div class="p-3 position-absolute border shadow-sm rounded" style="top:15px; left:15px; z-index:10; background:rgba(253, 251, 247, 0.92); border-color: var(--bordo-pergamenato) !important;">
+                                        <h6 class="text-danger font-weight-bold mb-2" style="font-family:'Cormorant Garamond';">Legenda Nodi:</h6>
+                                        <div class="small">
+                                            <span class="badge badge-bentivoglio d-block text-left mb-1"><i class="fas fa-cube mr-1"></i> Item Culturale</span>
+                                            <span class="badge badge-primary d-block text-left mb-1"><i class="fas fa-user mr-1"></i> Persona / Attore</span>
+                                            <span class="badge badge-success d-block text-left mb-1"><i class="fas fa-map-marker-alt mr-1"></i> Luogo Urbano</span>
+                                            <span class="badge badge-warning text-dark d-block text-left"><i class="fas fa-calendar-alt mr-1"></i> Evento Storico</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- 2. CONTENITORE MAPPA STORICO-URBANA (LEAFLET.JS) -->
+                            <div class="tab-pane fade" id="vista-mappa" role="tabpanel">
+                                <div id="map-leaflet-container" style="height: 600px; width: 100%; background-color: #E5E3DF; position: relative;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-white text-muted small" style="border-top: 1px solid var(--bordo-pergamenato);">
+                        <i class="fas fa-mouse-pointer mr-1"></i> Clicca su un nodo del grafo o su un marker della mappa per visualizzare i dettagli nel pannello laterale.
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLONNA DESTRA: PANNELLO DI DETTAGLIO SELEZIONE (SIDEBAR) -->
+            <div class="col-lg-4 mb-4">
+                <div class="card card-rinascimento h-100 shadow-sm" id="panel-dettaglio-nodo">
+                    <div class="card-header bg-bentivoglio text-white" style="border-bottom: 2px solid var(--oro-rinascimentale, #FEE56E);">
+                        <h5 class="card-title mb-0" style="font-family:'Cormorant Garamond';">
+                            <i class="fas fa-info-circle mr-2"></i>Scheda Entità Selezionata
+                        </h5>
+                    </div>
+                    
+                    <div class="card-body">
+                        <!-- Stato iniziale (visibile di default) -->
+                        <div id="nodo-empty-state" class="text-center py-5 text-muted">
+                            <i class="fas fa-hand-pointer fa-2x mb-3 text-warning"></i>
+                            <p class="font-italic">Seleziona un elemento dal grafo o dalla mappa per visualizzarne informazioni, conntrollo autorità e le relazioni storiche.</p>
+                        </div>
+
+                        <!-- Contenitore popolato dinamicamente al click tramite app-esplora.js -->
+                        <div id="nodo-dettaglio-content" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER STILE -->
+    <footer class="navbar-umanistica text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-3 mb-md-0">
+                    <h5 class="text-warning font-weight-bold mb-1" style="font-family: 'Cormorant Garamond', serif;">
+                        La Bologna Bentivolesca (1463–1506)
+                    </h5>
+                    <p class="small text-light mb-0">
+                        Progetto per il corso di Digital Humanities — Laurea Magistrale in Scienze Storiche. <br>Alma Mater Studiorum, Università di Bologna.<br>
+                        Modellazione semantica su dati di dominio storico e storico-artistico.
+                    </p>
+                </div>
+                <div class="col-md-5 text-md-right">
+                    <span class="badge badge-bentivoglio p-2 mb-2">Standard: DC | TEI XML | CIDOC CRM</span>
+                    <p class="small text-muted mb-0">Licenza Dati: <a href="https://creativecommons.org/licenses/by/4.0/" class="text-warning" target="_blank">CC BY 4.0</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT E LIBRERIE JAVASCRIPT -->
+    <!-- 1. jQuery & Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- 2. Leaflet JS (Mappa) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- 3. Cytoscape JS (Grafo di Rete) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
+    
+    <!-- 4. Script applicativo personalizzato unificato -->
+    <script src="js/app-esplora.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affresco della Battaglia della Riccardina | La Bologna Bentivolesca</title>
+    
+    <!-- Metadati Dublin Core espressi in HTML5 -->
+    <meta name="DC.title" content="Battaglia della Riccardina (o della Molinella)">
+    <meta name="DC.creator" content="Da Romano Girolamo, il Romanino">
+    <meta name="DC.date" content="1520/1530">
+    <meta name="DC.type" content="PhysicalObject">
+    <meta name="DC.format" content="Dipinto murale a fresco">
+    <meta name="DC.subject" content="Battaglia della Riccardina; Bartolomeo Colleoni; Ercole I d'Este; Ercole Bentivoglio; Castello di Malpaga; Pittura murale del Cinquecento">
+    <meta name="DC.identifier" content="IT11">
+    <meta name="DCTERMS.spatial" content="Castello di Malpaga, Cavernago (Bergamo)">
+    <meta name="DCTERMS.isPartOf" content="Bologna bentivolesca: una rete digitale della signoria">
+
+    <!-- Bootstrap CSS 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons & FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Stile Personalizzato -->
+    <link rel="stylesheet" href="../Style v3.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/Arms_of_the_house_of_Bentivoglio.ico">
+</head>
+<body>
+
+    <!-- NAVBAR HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-umanistica sticky-top">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand brand-umanistico text-warning font-weight-bold" href="../index.html" style="font-size: 1.5rem;">
+                <i class="fas fa-scroll mr-2"></i>La Bologna Bentivolesca
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto align-items-lg-center">
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../index.html">Home</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../contesto.html"><i class="bi bi-hourglass-split mr-1"></i>Contesto Storico</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../catalogo.html"><i class="bi bi-bank mr-1"></i>Catalogo Item</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../esplora.html"><i class="bi bi-diagram-3 mr-1"></i>Mappa & Grafo</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../metodologia.html">Metodologia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <div class="py-2 border-bottom" style="background-color: var(--bg-card-manoscritto); border-color: var(--bordo-pergamenato) !important;">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 bg-transparent p-0 small" style="font-family: 'Cormorant Garamond', serif; font-size: 1.05rem;">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-danger">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../catalogo.html" class="text-danger">Catalogo</a></li>
+                    <li class="breadcrumb-item active text-muted" aria-current="page">Affresco della Battaglia della Riccardina</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <main class="container my-5">
+        <div class="row">
+            
+            <!-- COLONNA SINISTRA: Media e Metadati -->
+            <div class="col-lg-8 mb-4">
+                
+                <h1 class="display-4 font-weight-bold mb-1">Affresco della Battaglia della Riccardina - Particolare di Bartolomeo Colleoni</h1>
+                <p class="lead font-italic text-muted mb-4">Girolamo da Romano "il Romanino" (ca. 1520–1530)</p>
+
+                <!-- VISUALIZZATORE MEDIA -->
+                <div class="card card-rinascimento mb-4">
+                    <div class="position-relative text-center rounded-top" style="background-color: var(--inchiostro-ferrogallico);">
+                        <img src="../images/riccardina.jpg" class="img-fluid my-2" alt="Affresco della Battaglia della Riccardina nel Castello di Malpaga" style="max-height: 480px; object-fit: contain;">
+                        
+                        <button class="btn btn-rinascimento btn-sm position-absolute shadow" 
+                                data-toggle="modal" 
+                                data-target="#imageModal"
+                                style="bottom: 15px; right: 15px; z-index: 10;">
+                            <i class="fas fa-expand mr-1"></i> Ingrandisci
+                        </button>
+                    </div>
+                    <div class="card-footer small text-muted" style="background-color: var(--bg-card-manoscritto); border-top: 1px solid var(--bordo-pergamenato);">
+                        <i class="fas fa-image mr-1 text-warning"></i> Ciclo pittorico murale, Salone d'Onore del Castello di Malpaga, Cavernago (Bergamo).
+                    </div>
+                </div>
+
+                <!-- DESCRIZIONE ESPOSITIVA -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <h2 class="h3 border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        Descrizione dell'Item
+                    </h2>
+                    <p class="capilettera text-justify">
+                        L'<em>affresco della Battaglia della Riccardina</em> (o della Molinella), realizzato nel XVI secolo dal pittore bresciano <strong>il Romanino</strong> nel Salone d'Onore del <strong>Castello di Malpaga</strong>, commemora uno degli scontri bellici più rilevanti per gli equilibri geopolitici dell'Italia Quattrocentesca, combattuto il 25 luglio 1467 presso la località della Riccardina (Molinella, nel bolognese).
+                    </p>
+                    <p class="text-justify mb-0">
+                        La battaglia vide fronteggiarsi le truppe guidate dal condottiero Bartolomeo Colleoni — sostenuto da esuli fiorentini e veneziani — e l'esercito della lega italica guidato da Federico da Montefeltro, a sostegno di Firenze, Milano e della signoria di Giovanni II Bentivoglio per preservare lo status quo di Bologna. L'opera del Romanino, commissionata dagli eredi Colleoni, celebra la virtù militare del capitano di ventura attraverso un impianto scenografico dinamico e monumentale, testimoniando la memoria storica degli eventi che consolidarono il potere bentivolesco in Emilia.
+                    </p>
+                </section>
+
+                <!-- METADATI DUBLIN CORE -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <h2 class="h3 border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        Metadati Descrittivi (Dublin Core)
+                    </h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered mb-0" style="border-color: var(--bordo-pergamenato);">
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="w-30" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Identificativo ID</th>
+                                    <td><code class="text-danger">IT11</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Titolo</th>
+                                    <td>Affresco della Battaglia della Riccardina</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Pittore</th>
+                                    <td>
+                                        <a href="https://viaf.org/viaf/122377180/" target="_blank" rel="noopener" class="text-danger font-weight-bold">
+                                            Girolamo il Romanino <i class="fas fa-external-link-alt small ml-1"></i>
+                                        </a> (VIAF)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Datazione</th>
+                                    <td>ca. 1520–1530 (Rappresenta eventi del 1467)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Tipologia Item</th>
+                                    <td><span class="badge badge-bentivoglio">Pittura</span> / Dipinto murale a fresco</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Materia e Tecnica</th>
+                                    <td>Intonaco dipinto ad affresco</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Conservazione</th>
+                                    <td>
+                                        <a href="https://www.geonames.org/6534224/" target="_blank" rel="noopener" class="text-danger font-weight-bold">
+                                            Castello di Malpaga, Cavernago (Bergamo), Italia <i class="fas fa-external-link-alt small ml-1"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Soggetti / Temi</th>
+                                    <td>Battaglia della Riccardina, Molinella, Bartolomeo Colleoni, il Romanino, Castello di Malpaga, Giovanni II Bentivoglio, Storia militare rinascimentale</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- ANTEPRIMA CODIFICA XML DC -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        <h2 class="h3 mb-0">Codifica SORGENTE (XML / Dublin Core)</h2>
+                        <a href="../xml/IT11_Riccardina.xml" download class="btn btn-outline-danger btn-sm">
+                            <i class="fas fa-download mr-1"></i> Scarica XML DC
+                        </a>
+                    </div>
+                    
+                    <div class="p-3 rounded font-monospace small position-relative overflow-auto" style="background-color: var(--inchiostro-ferrogallico); color: #E6DFD3; max-height: 320px; border: 1px solid var(--oro-rinascimentale);">
+                        <pre class="m-0 text-light"><code>&lt;oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd"&gt;
+  &lt;dc:title&gt;Affresco della Battaglia della Riccardina&lt;/dc:title&gt;
+  &lt;dc:creator&gt;il Romanino (Girolamo da Romano, ca. 1484-1566)&lt;/dc:creator&gt;
+  &lt;dc:subject&gt;Battaglia della Riccardina&lt;/dc:subject&gt;
+  &lt;dc:subject&gt;Battaglia della Molinella&lt;/dc:subject&gt;
+  &lt;dc:subject&gt;Bartolomeo Colleoni&lt;/dc:subject&gt;
+  &lt;dc:subject&gt;Castello di Malpaga&lt;/dc:subject&gt;
+  &lt;dc:subject&gt;Giovanni II Bentivoglio&lt;/dc:subject&gt;
+  &lt;dc:description&gt;Dipinto murale a fresco del Romanino raffigurante lo scontro campale della Riccardina (25 luglio 1467), fondamentale per gli equilibri della Bologna bentivolesca e la storia condottieristica del XV secolo.&lt;/dc:description&gt;
+  &lt;dc:publisher&gt;Castello di Malpaga, Cavernago&lt;/dc:publisher&gt;
+  &lt;dc:date&gt;1520-1530&lt;/dc:date&gt;
+  &lt;dc:type&gt;PhysicalObject&lt;/dc:type&gt;
+  &lt;dc:format&gt;Dipinto murale ad affresco&lt;/dc:format&gt;
+  &lt;dc:identifier&gt;IT11&lt;/dc:identifier&gt;
+  &lt;dc:source&gt;Castello di Malpaga, Cavernago (Bergamo), Italia&lt;/dc:source&gt;
+  &lt;dc:language&gt;ita&lt;/dc:language&gt;
+  &lt;dc:coverage&gt;Cavernago / Molinella, XVI secolo&lt;/dc:coverage&gt;
+  &lt;dc:rights&gt;https://creativecommons.org/publicdomain/mark/1.0/&lt;/dc:rights&gt;
+&lt;/oai_dc:dc&gt;</code></pre>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- COLONNA DESTRA: Relazioni e Correlati -->
+            <div class="col-lg-4">
+                
+                <!-- RELAZIONI GRAFO -->
+                <div class="card card-rinascimento mb-4">
+                    <div class="card-header text-white">
+                        <h3 class="h5 font-weight-bold mb-0 text-white">
+                            <i class="fas fa-project-diagram text-warning mr-2"></i>Connessioni di Rete
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush bg-transparent">
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">dipinto da</span>
+                                <a class="font-weight-bold text-danger">il Romanino</a>
+                            </li>
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">ubicato a</span>
+                                <a class="font-weight-bold text-danger">Castello di Malpaga</a>
+                            </li>
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">evento storico</span>
+                                <a class="font-weight-bold text-danger">Battaglia della Riccardina (1467)</a>
+                            </li>
+                        </ul>
+
+                        <div class="mt-4">
+                            <a href="../esplora.html" class="btn btn-rinascimento btn-block btn-sm shadow">
+                                <i class="fas fa-network-wired mr-1"></i> Apri Grafo Interattivo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM CORRELATI -->
+                <div class="card card-rinascimento">
+                    <div class="card-header text-white">
+                        <h3 class="h5 font-weight-bold mb-0 text-white">
+                            <i class="bi bi-bank text-warning mr-2"></i>Item Correlati
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="media mb-3 align-items-center">
+                            <img src="../images/daga.jpg" class="mr-3 rounded border" width="60" height="60" alt="Daga Cinquedea" style="object-fit: cover; border-color: var(--bordo-pergamenato) !important;">
+                            <div class="media-body">
+                                <h4 class="h6 mb-0">
+                                    <a href="item_11.html" class="text-danger font-weight-bold">Daga Cinquedea</a>
+                                </h4>
+                                <small class="text-muted">Arma di rappresentanza</small>
+                            </div>
+                        </div>
+
+                        <div class="media align-items-center">
+                            <img src="../images/medaglia.jpg" class="mr-3 rounded border" width="60" height="60" alt="Medaglia di Giovanni II" style="object-fit: cover; border-color: var(--bordo-pergamenato) !important;">
+                            <div class="media-body">
+                                <h4 class="h6 mb-0">
+                                    <a href="item_05.html" class="text-danger font-weight-bold">Medaglia di Giovanni II</a>
+                                </h4>
+                                <small class="text-muted">Effige equestre di Giovanni II</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- MODAL INGRANDIMENTO -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background-color: var(--inchiostro-ferrogallico); border: 1px solid var(--oro-rinascimentale);">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title text-warning" style="font-family: 'Cormorant Garamond', serif;">Affresco della Battaglia della Riccardina - Castello di Malpaga</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Chiudi">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="../images/riccardina.jpg" class="img-fluid" alt="Affresco della Battaglia della Riccardina - Particolare di Bartolomeo Colleoni">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="navbar-umanistica text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-3 mb-md-0">
+                    <h5 class="text-warning font-weight-bold mb-1" style="font-family: 'Cormorant Garamond', serif;">
+                        La Bologna Bentivolesca (1463–1506)
+                    </h5>
+                    <p class="small text-light mb-0">
+                        Progetto per il corso di Digital Humanities — Laurea Magistrale in Scienze Storiche. <br>Alma Mater Studiorum, Università di Bologna.<br>
+                        Modellazione semantica su dati di dominio storico e storico-artistico.
+                    </p>
+                </div>
+                <div class="col-md-5 text-md-right">
+                    <span class="badge badge-bentivoglio p-2 mb-2">Standard: DC | TEI XML | CIDOC CRM</span>
+                    <p class="small text-muted mb-0">Licenza Dati: <a href="https://creativecommons.org/licenses/by/4.0/" class="text-warning" target="_blank">CC BY 4.0</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS + jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

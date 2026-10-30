@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+
+    <dc:identifier>IT04</dc:identifier>
+    <dc:title>Ciclo della vita di Santa Cecilia e San Valeriano</dc:title>
+    <dc:creator>Francia, Francesco (1450-1517)</dc:creator>
+    <dc:creator>Costa, Lorenzo (1460-1535)</dc:creator>
+    <dc:creator>Aspertini, Amico (1474-1552)</dc:creator>
+    <dcterms:contributor>Bentivoglio, Giovanni II</dcterms:contributor>
+    <dc:date>1505-1506</dc:date>
+    <dcterms:created>1505-1506</dcterms:created>
+    <dc:type>Image</dc:type>
+    <dc:type>Ciclo di affreschi</dc:type>
+    <dc:format>Affresco / Dipinto murale</dc:format>
+    <dc:description>Ciclo di dieci affreschi narrativi dedicati alle storie di santa Cecilia e san Valeriano, realizzati sulla parete navata dell'Oratorio di Santa Cecilia a Bologna per volontà di Giovanni II Bentivoglio.</dc:description>
+    <dc:subject>Santa Cecilia</dc:subject>
+    <dc:subject>Rinascimento bolognese</dc:subject>
+    <dc:subject>Pittura murale</dc:subject>
+    <dc:subject>Mecenatismo bentivolesco</dc:subject>
+    <dc:source>Oratorio di Santa Cecilia, Bologna</dc:source>
+    <dcterms:spatial>Strada San Donato (attuale Via Zamboni), Bologna</dcterms:spatial>
+    <dc:language>it</dc:language>
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+    <dc:rights>Tutti i diritti riservati / Pubblico Dominio per l'opera originale</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>

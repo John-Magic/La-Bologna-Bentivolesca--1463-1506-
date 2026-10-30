@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+
+    <dc:identifier>IT12</dc:identifier>
+    <dc:title>Ritratto di Papa Giulio II</dc:title>
+    <dc:creator>Sanzio, Raffaello (1483-1520)</dc:creator>
+    <dcterms:contributor>Papa Giulio II (Giuliano della Rovere)</dcterms:contributor>
+    <dcterms:contributor xsi:type="dcterms:URI">viaf.org/viaf/51697938/</dcterms:contributor>
+    <dc:date>1511-1512</dc:date>
+    <dcterms:created>1511-1512</dcterms:created>
+    <dc:type>Image</dc:type>
+    <dc:type>Ritratto</dc:type>
+    <dc:format>Olio su tavola</dc:format>
+    <dc:description>Dipinto ad olio su tavola di Raffaello Sanzio raffigurante Papa Giulio II della Rovere, il pontefice che nel 1506 pose fine alla signoria dei Bentivoglio conquistando direttamente Bologna.</dc:description>
+    <dc:subject>Cacciata dei Bentivoglio</dc:subject>
+    <dc:subject>Stato Pontificio</dc:subject>
+    <dc:subject>Ritrattistica papale rinascimentale</dc:subject>
+    <dc:subject>Rinascimento italiano</dc:subject>
+    <dc:source>National Gallery, Londra / Galleria degli Uffizi, Firenze</dc:source>
+    <dcterms:spatial>Bologna</dcterms:spatial>
+    <dc:language>it</dc:language>
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+    <dc:rights>Tutti i diritti riservati / Pubblico Dominio per l'opera originale</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>

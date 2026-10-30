@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+
+    <dc:identifier>IT09</dc:identifier>
+    <dc:title>Basilica di San Giacomo Maggiore</dc:title>
+    <dc:creator>Ordine degli Eremitani di Sant'Agostino</dc:creator>
+    <dcterms:contributor>Bentivoglio, Giovanni II</dcterms:contributor>
+    <dc:date>1263-1498</dc:date>
+    <dcterms:created>1263-1498</dcterms:created>
+    <dc:type>Architecture</dc:type>
+    <dc:type>Basilica</dc:type>
+    <dc:format>Edificio religioso monumentale</dc:format>
+    <dc:description>Complesso monumentale agostiniano divenuto il mausoleo della famiglia Bentivoglio. Ospita la Cappella gentilizia con capolavori di Lorenzo Costa e Francesco Francia.</dc:description>
+    <dc:subject>Basilica di San Giacomo Maggiore</dc:subject>
+    <dc:subject>Cappella Bentivoglio</dc:subject>
+    <dc:subject>Lorenzo Costa</dc:subject>
+    <dc:subject>Francesco Francia</dc:subject>
+    <dc:subject>Architettura rinascimentale bolognese</dc:subject>
+    <dc:source>Piazza Gioacchino Rossini, Bologna</dc:source>
+    <dcterms:spatial>Strada San Donato (attuale Via Zamboni), Bologna</dcterms:spatial>
+    <dc:language>it</dc:language>
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+    <dc:rights>Tutti i diritti riservati / Pubblico Dominio per l'opera originale</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medaglia di Giovanni II Bentivoglio | La Bologna Bentivolesca</title>
+    
+    <!-- Metadati Dublin Core espressi in HTML5 per Web Semantico -->
+    <meta name="DC.title" content="Medaglia commemorativa di Giovanni II Bentivoglio">
+    <meta name="DC.creator" content="Savelli, Sperandio (Sperandio da Mantova)">
+    <meta name="DC.date" content="1478/1482">
+    <meta name="DC.type" content="PhysicalObject">
+    <meta name="DC.format" content="Bronzo / Medaglia fusa">
+    <meta name="DC.subject" content="Rinascimento bolognese; Giovanni II Bentivoglio; Numismatica; Sperandio Savelli; Ritratteistica signorile">
+    <meta name="DC.identifier" content="IT05">
+    <meta name="DCTERMS.spatial" content="Museo Civico Medi EVALE di Bologna, Bologna">
+    <meta name="DCTERMS.isPartOf" content="Bologna bentivolesca: una rete digitale della signoria">
+
+    <!-- Bootstrap CSS 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Umanistici Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Stile Umanistico Personalizzato -->
+    <link rel="stylesheet" href="../Style v3.css">
+    <!-- Icona Stemma Bentivoglio -->
+    <link rel="icon" type="image/x-icon" href="../images/Arms_of_the_house_of_Bentivoglio.ico">
+</head>
+<body>
+
+    <!-- NAVBAR HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-umanistica sticky-top">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand brand-umanistico text-warning font-weight-bold" href="../index.html" style="font-size: 1.5rem;">
+                <i class="fas fa-scroll mr-2"></i>La Bologna Bentivolesca
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto align-items-lg-center">
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../index.html">Home</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../contesto.html"><i class="bi bi-hourglass-split mr-1"></i>Contesto Storico</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../catalogo.html"><i class="bi bi-bank mr-1"></i>Catalogo Item</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../esplora.html"><i class="bi bi-diagram-3 mr-1"></i>Mappa & Grafo</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../metodologia.html">Metodologia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB DI NAVIGAZIONE -->
+    <div class="py-2 border-bottom" style="background-color: var(--bg-card-manoscritto); border-color: var(--bordo-pergamenato) !important;">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 bg-transparent p-0 small" style="font-family: 'Cormorant Garamond', serif; font-size: 1.05rem;">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-danger">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../catalogo.html" class="text-danger">Catalogo</a></li>
+                    <li class="breadcrumb-item active text-muted" aria-current="page">Medaglia di Giovanni II Bentivoglio</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- CONTENUTO PRINCIPALE SCHEDA ITEM -->
+    <main class="container my-5">
+        <div class="row">
+            
+            <!-- COLONNA DI SINISTRA: Visualizzazione media e Metadati -->
+            <div class="col-lg-8 mb-4">
+                
+                <h1 class="display-4 font-weight-bold mb-1">Medaglia di Giovanni II Bentivoglio</h1>
+                <p class="lead font-italic text-muted mb-4">Sperandio Savelli (ca. 1462)</p>
+
+                <!-- VISUALIZZATORE MEDIA -->
+                <div class="card card-rinascimento mb-4">
+                    <div class="position-relative text-center rounded-top" style="background-color: var(--inchiostro-ferrogallico);">
+                        <img src="../images/medaglia.jpg" class="img-fluid my-2" alt="Medaglia commemotativa di Giovanni II Bentivoglio" style="max-height: 480px; object-fit: contain;">
+                        
+                        <button class="btn btn-rinascimento btn-sm position-absolute shadow" 
+                                data-toggle="modal" 
+                                data-target="#imageModal"
+                                style="bottom: 15px; right: 15px; z-index: 10;">
+                            <i class="fas fa-expand mr-1"></i> Ingrandisci
+                        </button>
+                    </div>
+                    <div class="card-footer small text-muted" style="background-color: var(--bg-card-manoscritto); border-top: 1px solid var(--bordo-pergamenato);">
+                        <i class="fas fa-coins mr-1 text-warning"></i> Dritto e rovescio della medaglia bronzea di Giovanni II Bentivoglio conservata al Museo Civico Medievale di Bologna.
+                    </div>
+                </div>
+
+                <!-- DESCRIZIONE ESPOSITIVA -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <h2 class="h3 border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        Descrizione dell'Item
+                    </h2>
+                    <p class="capilettera text-justify">
+                        Questa medaglia bronzea in rilievo fu fusa da <strong>Sperandio Savelli</strong>, uno dei più celebri medaglisti e scultori del Rinascimento italiano, durante il suo lungo soggiorno bolognese al servizio della corte bentivolesca.
+                    </p>
+                    <p class="text-justify mb-0">
+                        Il dritto della medaglia mostra il busto di profilo di <strong>Giovanni II Bentivoglio</strong>, ritratto con berretto e abiti signorili, circondato da un'iscrizione celebrativa in capitale latina. Il rovescio raffigura il signore di Bologna a cavallo in tenuta da militare o allegorie del suo potere politico e militare, rappresentando uno strumento fondamentale di propaganda e diplomazia cortigiana dell'epoca.
+                    </p>
+                </section>
+
+                <!-- SCHEDA METADATI DESCRITTIVI -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <h2 class="h3 border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        Metadati Descrittivi (Dublin Core)
+                    </h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered mb-0" style="border-color: var(--bordo-pergamenato);">
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="w-30" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Identificativo ID</th>
+                                    <td><code class="text-danger">IT05</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Titolo</th>
+                                    <td>Medaglia commemorativa di Giovanni II Bentivoglio</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Autore / Medaglista</th>
+                                    <td>
+                                        <a href="https://viaf.org/viaf/95737333/" target="_blank" rel="noopener" class="text-danger font-weight-bold">
+                                            Savelli, Sperandio (Sperandio da Mantova) <i class="fas fa-external-link-alt small ml-1"></i>
+                                        </a> (Authority: VIAF)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Datazione</th>
+                                    <td>ca. 1462</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Tipologia Item</th>
+                                    <td><span class="badge badge-bentivoglio">Oggetto Tridimensionale</span> / Medaglia in bronzo fuso</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Soggetto Raffigurato</th>
+                                    <td>Giovanni II Bentivoglio</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Luogo di Conservazione</th>
+                                    <td>Museo Civico Medievale di Bologna</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Soggetti / Temi</th>
+                                    <td>Giovanni II Bentivoglio, Medaglistica rinascimentale, Numismatica, Sperandio Savelli, Ritratto di profilo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- SEZIONE CODIFICA XML / DUBLIN CORE -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        <h2 class="h3 mb-0">Codifica SORGENTE (XML / Dublin Core)</h2>
+                        <a href="../xml/IT05_Medaglia.xml" download class="btn btn-outline-danger btn-sm">
+                            <i class="fas fa-download mr-1"></i> Scarica File XML DC
+                        </a>
+                    </div>
+                    <p class="small text-muted mb-3">Essendo un oggetto d'arte e reperto museale tridimensionale, l'item è codificato secondo lo standard <strong>XML Dublin Core (oai_dc)</strong>:</p>
+                    
+                    <div class="p-3 rounded font-monospace small position-relative overflow-auto" style="background-color: var(--inchiostro-ferrogallico); color: #E6DFD3; max-height: 320px; border: 1px solid var(--oro-rinascimentale);">
+                        <pre class="m-0 text-light"><code>&lt;oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd"&gt;
+  &lt;dc:title&gt;Medaglia commemorativa di Giovanni II Bentivoglio&lt;/dc:title&gt;
+  &lt;dc:creator&gt;Savelli, Sperandio (ca. 1431-1504)&lt;/dc:creator&gt;
+  &lt;dc:contributor&gt;Bentivoglio, Giovanni II (Soggetto e Committente)&lt;/dc:contributor&gt;
+  &lt;dc:subject&gt;Giovanni II Bentivoglio&lt;/dc:subject&gt;
+  &lt;dc:subject&gt;Medaglistica rinascimentale&lt;/dc:subject&gt;
+  &lt;dc:subject&gt;Numismatica bolognese&lt;/dc:subject&gt;
+  &lt;dc:subject&gt;Rinascimento emiliano&lt;/dc:subject&gt;
+  &lt;dc:description&gt;Medaglia celebrativa in bronzo fuso realizzata da Sperandio Savelli raffigurante sul dritto il busto di profilo di Giovanni II Bentivoglio e sul rovescio una figura allegorica e cavalleresca.&lt;/dc:description&gt;
+  &lt;dc:publisher&gt;Museo Civico Medievale di Bologna&lt;/dc:publisher&gt;
+  &lt;dc:date&gt;1462&lt;/dc:date&gt;
+  &lt;dc:type&gt;PhysicalObject&lt;/dc:type&gt;
+  &lt;dc:format&gt;Bronzo / Scultura e fusione in metallo&lt;/dc:format&gt;
+  &lt;dc:identifier&gt;IT05&lt;/dc:identifier&gt;
+  &lt;dc:source&gt;Museo Civico Medievale, Bologna (BO), Italia&lt;/dc:source&gt;
+  &lt;dc:language&gt;lat&lt;/dc:language&gt;
+  &lt;dc:coverage&gt;Bologna, 1462-1463&lt;/dc:coverage&gt;
+  &lt;dc:rights&gt;https://creativecommons.org/licenses/by/4.0/&lt;/dc:rights&gt;
+&lt;/oai_dc:dc&gt;</code></pre>
+                    </div>
+                </section>
+
+            </div> <!-- CHIUSURA COLONNA SINISTRA -->
+
+            <!-- COLONNA DI DESTRA: ASIDE RELAZIONI DI RETE & CORRELATI -->
+            <div class="col-lg-4">
+                
+                <!-- BLOCCO CONNESSIONI NELLA RETE -->
+                <div class="card card-rinascimento mb-4">
+                    <div class="card-header text-white">
+                        <h3 class="h5 font-weight-bold mb-0 text-white">
+                            <i class="fas fa-project-diagram text-warning mr-2"></i>Connessioni di Rete
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="small text-muted mb-3">Archi della rete grafi collegati a questo nodo:</p>
+                        
+                        <ul class="list-group list-group-flush bg-transparent">
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">fusa da</span>
+                                <a class="font-weight-bold text-danger">Sperandio Savelli</a>
+                            </li>
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">ritrae</span>
+                                <a class="font-weight-bold text-danger">Giovanni II Bentivoglio</a>
+                            </li>
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">conservata presso</span>
+                                <a class="font-weight-bold text-danger">Museo Civico Medievale</a>
+                            </li>
+                        </ul>
+
+                        <div class="mt-4">
+                            <a href="../esplora.html" class="btn btn-rinascimento btn-block btn-sm shadow">
+                                <i class="fas fa-network-wired mr-1"></i> Visualizza il Grafo Interattivo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOCCO ITEM CORRELATI -->
+                <div class="card card-rinascimento">
+                    <div class="card-header text-white">
+                        <h3 class="h5 font-weight-bold mb-0 text-white">
+                            <i class="bi bi-bank text-warning mr-2"></i>Item Correlati
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        
+                        <div class="media mb-3 align-items-center">
+                            <img src="../images/dittico.jpg" class="mr-3 rounded border" width="60" height="60" alt="Ritratto di Giovanni II Bentivoglio" style="object-fit: cover; border-color: var(--bordo-pergamenato) !important;">
+                            <div class="media-body">
+                                <h4 class="h6 mb-0">
+                                    <a href="item-ritratto-giovanni.html" class="text-danger font-weight-bold">Ritratto di Giovanni II e Ginevra</a>
+                                </h4>
+                                <small class="text-muted">Dipinto dei profili dei due coniugi Bentivoglio</small>
+                            </div>
+                        </div>
+
+                        <div class="media align-items-center">
+                            <img src="../images/daga.jpg" class="mr-3 rounded border" width="60" height="60" alt="Daga Bentivolesco" style="object-fit: cover; border-color: var(--bordo-pergamenato) !important;">
+                            <div class="media-body">
+                                <h4 class="h6 mb-0">
+                                    <a href="item-pala.html" class="text-danger font-weight-bold">Daga con stemma bentivolesco</a>
+                                </h4>
+                                <small class="text-muted">Daga di pregevole fattura, di proprietà di Annibale Bentivoglio</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div> <!-- CHIUSURA COLONNA DESTRA -->
+
+        </div> <!-- CHIUSURA ROW -->
+    </main>
+
+    <!-- MODAL PER INGRANDIMENTO IMMAGINE -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background-color: var(--inchiostro-ferrogallico); border: 1px solid var(--oro-rinascimentale);">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title text-warning" style="font-family: 'Cormorant Garamond', serif;">Medaglia di Giovanni II Bentivoglio - Vista ingrandita</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Chiudi">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="../images/medaglia.jpg" cass="img-fluid" alt="Ingrandimento Medaglia Giovanni II Bentivoglio">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="navbar-umanistica text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-3 mb-md-0">
+                    <h5 class="text-warning font-weight-bold mb-1" style="font-family: 'Cormorant Garamond', serif;">
+                        La Bologna Bentivolesca (1463–1506)
+                    </h5>
+                    <p class="small text-light mb-0">
+                        Progetto per il corso di Digital Humanities — Laurea Magistrale in Scienze Storiche. <br>Alma Mater Studiorum, Università di Bologna.<br>
+                        Modellazione semantica su dati di dominio storico e storico-artistico.
+                    </p>
+                </div>
+                <div class="col-md-5 text-md-right">
+                    <span class="badge badge-bentivoglio p-2 mb-2">Standard: DC | TEI XML | CIDOC CRM</span>
+                    <p class="small text-muted mb-0">Licenza Dati: <a href="https://creativecommons.org/licenses/by/4.0/" class="text-warning" target="_blank">CC BY 4.0</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS + jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

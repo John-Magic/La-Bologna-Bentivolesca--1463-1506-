@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+    
+    <dc:identifier>IT02</dc:identifier>
+    <dc:title>Domus Aurea</dc:title>
+    <dcterms:alternative>Palazzo Bentivoglio</dcterms:alternative>
+    <dc:creator>Pagno di Lapo Portigiani (1408-1470)</dc:creator>
+    <dc:creator xsi:type="dcterms:URI">http://viaf.org/viaf/13425153</dc:creator>
+    <dcterms:contributor>Bentivoglio, Giovanni II</dcterms:contributor>
+    <dcterms:contributor xsi:type="dcterms:URI">https://www.wikidata.org/wiki/Q194996</dcterms:contributor>
+    <dcterms:contributor>Bentivoglio, Sante</dcterms:contributor>
+    <dcterms:contributor xsi:type="dcterms:URI">https://www.wikidata.org/wiki/Q2298732</dcterms:contributor>
+    <dc:date>1460-1480</dc:date>
+    <dcterms:created>1460-1480</dcterms:created>
+    <dc:type>Architecture</dc:type>
+    <dc:type xsi:type="dcterms:URI">http://vocab.getty.edu/page/aat/300263552</dc:type>
+    <dc:type>Architettura residenziale signorile</dc:type>
+    <dc:format>Palazzo monumentale</dc:format>
+    <dcterms:medium>Muratura in cotto e decorazioni rinascimentali</dcterms:medium>
+    <dc:description>Fastosa residenza signorile dei Bentivoglio situata in Strada San Donato a Bologna. Commissionata da Sante Bentivoglio, inaugurata ed ampliata daGiovanni II, fu interamente distrutta nel 1507 dalla popolazione a seguito della cacciata della signoria voluta da Papa Giulio II.</dc:description>
+    <dc:subject>Rinascimento bolognese</dc:subject>
+    <dc:subject>Giovanni II Bentivoglio</dc:subject>
+    <dc:subject>Architettura scomparsa</dc:subject>
+    <dc:subject>Guasto</dc:subject>
+    <dc:source>Palazzo Bentivoglio, Strada San Donato, Bologna (Edificio distrutto)</dc:source>
+    <dc:source xsi:type="dcterms:URI">https://www.geonames.org/3181928</dc:source>
+    <dcterms:spatial>Strada San Donato (attuale Via Zamboni / Via del Guasto), Bologna</dcterms:spatial>
+    <dc:language>it</dc:language>
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+    <dc:rights>Tutti i diritti riservati</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>

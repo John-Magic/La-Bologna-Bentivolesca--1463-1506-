@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domus Aurea (Palazzo Bentivoglio) | La Bologna Bentivolesca</title>
+    
+    <!-- Metadati Dublin Core espressi in HTML5 per Web Semantico -->
+    <meta name="DC.title" content="Domus Aurea (Palazzo Bentivoglio)">
+    <meta name="DC.creator" content="Pagno di Lapo Portigiani">
+    <meta name="DC.date" content="1460/1480">
+    <meta name="DC.type" content="PhysicalObject">
+    <meta name="DC.format" content="Architettura residenziale signorile">
+    <meta name="DC.subject" content="Rinascimento bolognese; Giovanni II Bentivoglio; Architettura signorile; Guasto">
+    <meta name="DC.identifier" content="IT02">
+    <meta name="DCTERMS.spatial" content="Strada San Donato (attuale Via Zamboni), Bologna">
+    <meta name="DCTERMS.isPartOf" content="La Bologna Bentivolesca (1463–1506)">
+
+    <!-- Bootstrap CSS 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Umanistici Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Stile Umanistico Personalizzato -->
+    <link rel="stylesheet" href="../Style v3.css">
+    <!-- Icona Stemma Bentivoglio -->
+    <link rel="icon" type="image/x-icon" href="../images/Arms_of_the_house_of_Bentivoglio.ico">
+</head>
+<body>
+
+    <!-- NAVBAR HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-umanistica sticky-top">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand brand-umanistico text-warning font-weight-bold" href="../index.html" style="font-size: 1.5rem;">
+                <i class="fas fa-scroll mr-2"></i>La Bologna Bentivolesca
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto align-items-lg-center">
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../index.html">Home</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../contesto.html"><i class="bi bi-hourglass-split mr-1"></i>Contesto Storico</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../catalogo.html"><i class="bi bi-bank mr-1"></i>Catalogo Item</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../esplora.html"><i class="bi bi-diagram-3 mr-1"></i>Mappa & Grafo</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../metodologia.html">Metodologia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB DI NAVIGAZIONE -->
+    <div class="py-2 border-bottom" style="background-color: var(--bg-card-manoscritto); border-color: var(--bordo-pergamenato) !important;">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 bg-transparent p-0 small" style="font-family: 'Cormorant Garamond', serif; font-size: 1.05rem;">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-danger">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../catalogo.html" class="text-danger">Catalogo</a></li>
+                    <li class="breadcrumb-item active text-muted" aria-current="page">Domus Aurea</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- CONTENUTO PRINCIPALE SCHEDA ITEM -->
+    <main class="container my-5">
+        <div class="row">
+            
+            <!-- COLONNA DI SINISTRA: Visualizzazione media e Metadati -->
+            <div class="col-lg-8 mb-4">
+                
+                <h1 class="display-4 font-weight-bold mb-1">Domus Aurea (Palazzo Bentivoglio)</h1>
+                <p class="lead font-italic text-muted mb-4">Pagno di Lapo Portigiani (1460–1480)</p>
+
+                <!-- VISUALIZZATORE MEDIA -->
+                <div class="card card-rinascimento mb-4">
+                    <div class="position-relative text-center rounded-top" style="background-color: var(--inchiostro-ferrogallico);">
+                        <img src="../images/Palazzo-Bentivoglio.jpg" class="img-fluid my-2" alt="Ricostruzione del Palazzo Bentivoglio" style="max-height: 480px; object-fit: contain;">
+                        
+                        <button class="btn btn-rinascimento btn-sm position-absolute shadow" 
+                                data-toggle="modal" 
+                                data-target="#imageModal"
+                                style="bottom: 15px; right: 15px; z-index: 10;">
+                            <i class="fas fa-expand mr-1"></i> Ingrandisci
+                        </button>
+                    </div>
+                    <div class="card-footer small text-muted" style="background-color: var(--bg-card-manoscritto); border-top: 1px solid var(--bordo-pergamenato);">
+                        <i class="fas fa-archway mr-1 text-warning"></i> Rappresentazione storica del monumentale palazzo di Strada San Donato.
+                    </div>
+                </div>
+
+                <!-- DESCRIZIONE ESPOSITIVA -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <h2 class="h3 border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        Descrizione dell'Item
+                    </h2>
+                    <p class="capilettera text-justify">
+                        La <em>Domus Aurea</em>, celebre residenza principesca della famiglia Bentivoglio, sorgeva in Strada San Donato (l'attuale Via Zamboni). Promossa da <strong>Sante Bentivoglio</strong> nel 1460 e ampliata in modo monumentale da <strong>Giovanni II Bentivoglio</strong>, rappresentava una delle corti rinascimentali più sfarzose d'Italia, ricca di logge, cortili affrescati, giardini ed orologi astronomici.
+                    </p>
+                    <p class="text-justify mb-0">
+                        Nel maggio del 1507, a seguito della cacciata della famiglia e della riconquista pontificia voluta da papa Giulio II, il Senato bolognese, sotto pressioni dello stesso pontefice, ne decretò la totale distruzione per mano del popolo. Dalle sue macerie nacque l'area dell'attuale Piazza Verdi e Giardino del Guasto.
+                    </p>
+                </section>
+
+                <!-- SCHEDA METADATI DESCRITTIVI (DUBLIN CORE) -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <h2 class="h3 border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        Metadati Descrittivi (Dublin Core)
+                    </h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered mb-0" style="border-color: var(--bordo-pergamenato);">
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="w-30" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Identificativo ID</th>
+                                    <td><code class="text-danger">IT02</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Titolo</th>
+                                    <td>
+                                        Domus Aurea
+                                        <br><small class="text-muted"><em>Titolo alternativo:</em> Palazzo Bentivoglio</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Architetto / Costruttore</th>
+                                    <td>
+                                        <a href="http://viaf.org/viaf/13425153" target="_blank" rel="noopener" class="text-danger font-weight-bold">
+                                            Pagno di Lapo Portigiani (1408-1470) <i class="fas fa-external-link-alt small ml-1"></i>
+                                        </a> <span class="badge badge-secondary ml-1">VIAF</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Committenti</th>
+                                    <td>
+                                        <a href="https://www.wikidata.org/wiki/Q194996" target="_blank" rel="noopener" class="text-danger font-weight-bold">
+                                            Bentivoglio, Giovanni II <i class="fas fa-external-link-alt small ml-1"></i>
+                                        </a> <span class="badge badge-secondary ml-1 mr-2">Wikidata</span>; 
+                                        <a href="https://www.wikidata.org/wiki/Q2298732" target="_blank" rel="noopener" class="text-danger font-weight-bold">
+                                            Bentivoglio, Sante <i class="fas fa-external-link-alt small ml-1"></i>
+                                        </a> <span class="badge badge-secondary ml-1">Wikidata</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Datazione</th>
+                                    <td>1460-1480</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Tipologia &amp; Architettura</th>
+                                    <td>
+                                        <span class="badge badge-bentivoglio mr-1">Architecture</span>
+                                        Architettura residenziale signorile
+                                        <br>
+                                        <small class="text-muted">
+                                            Tipo oggetto: 
+                                            <a href="http://vocab.getty.edu/page/aat/300263552" target="_blank" rel="noopener" class="text-danger">
+                                                Architecture <i class="fas fa-external-link-alt small ml-1"></i>
+                                            </a> <span class="badge badge-secondary">Getty AAT</span>
+                                        </small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Formato &amp; Tecnica</th>
+                                    <td>Palazzo monumentale (Muratura in cotto e decorazioni rinascimentali)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Collocazione d'Origine</th>
+                                    <td>
+                                        <a href="https://www.geonames.org/3181928" target="_blank" rel="noopener" class="text-danger font-weight-bold">
+                                            Palazzo Bentivoglio, Strada San Donato, Bologna (Edificio distrutto) <i class="fas fa-external-link-alt small ml-1"></i>
+                                        </a> <span class="badge badge-secondary ml-1">GeoNames</span>
+                                        <br>
+                                        <small class="text-muted">
+                                            <em>Ambito spaziale:</em> Strada San Donato (attuale Via Zamboni / Via del Guasto), Bologna
+                                        </small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Soggetti / Temi</th>
+                                    <td>Rinascimento bolognese; Giovanni II Bentivoglio; Architettura scomparsa; Guasto</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Collezione &amp; Licenza</th>
+                                    <td>
+                                        <em>Collezione:</em> La Bologna Bentivolesca (1463–1506)<br>
+                                        <em>Diritti:</em> Tutti i diritti riservati / <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" class="text-danger">CC BY 4.0</a> (Dati)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- SEZIONE CODIFICA XML / DUBLIN CORE -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        <h2 class="h3 mb-0">Codifica SORGENTE (XML / Dublin Core)</h2>
+                        <a href="../xml/IT02_DomusAurea.xml" download class="btn btn-outline-danger btn-sm">
+                            <i class="fas fa-download mr-1"></i> Scarica File XML DC
+                        </a>
+                    </div>
+                    <p class="small text-muted mb-3">Di seguito viene mostrata la codifica semantica in formato XML-Dublin Core associata a questo item del catalogo:</p>
+                    
+                    <div class="p-3 rounded font-monospace small position-relative overflow-auto" style="background-color: var(--inchiostro-ferrogallico); color: #E6DFD3; max-height: 350px; border: 1px solid var(--oro-rinascimentale);">
+                        <pre class="m-0 text-light"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd"&gt;
+    
+    &lt;dc:identifier&gt;IT02&lt;/dc:identifier&gt;
+    &lt;dc:title&gt;Domus Aurea&lt;/dc:title&gt;
+    &lt;dcterms:alternative&gt;Palazzo Bentivoglio&lt;/dcterms:alternative&gt;
+    &lt;dc:creator&gt;Pagno di Lapo Portigiani (1408-1470)&lt;/dc:creator&gt;
+    &lt;dc:creator xsi:type="dcterms:URI"&gt;http://viaf.org/viaf/13425153&lt;/dc:creator&gt;
+    &lt;dcterms:contributor&gt;Bentivoglio, Giovanni II&lt;/dcterms:contributor&gt;
+    &lt;dcterms:contributor xsi:type="dcterms:URI"&gt;https://www.wikidata.org/wiki/Q194996&lt;/dcterms:contributor&gt;
+    &lt;dcterms:contributor&gt;Bentivoglio, Sante&lt;/dcterms:contributor&gt;
+    &lt;dcterms:contributor xsi:type="dcterms:URI"&gt;https://www.wikidata.org/wiki/Q2298732&lt;/dcterms:contributor&gt;
+    &lt;dc:date&gt;1460-1480&lt;/dc:date&gt;
+    &lt;dcterms:created&gt;1460-1480&lt;/dcterms:created&gt;
+    &lt;dc:type&gt;Architecture&lt;/dc:type&gt;
+    &lt;dc:type xsi:type="dcterms:URI"&gt;http://vocab.getty.edu/page/aat/300263552&lt;/dc:type&gt;
+    &lt;dc:type&gt;Architettura residenziale signorile&lt;/dc:type&gt;
+    &lt;dc:format&gt;Palazzo monumentale&lt;/dc:format&gt;
+    &lt;dcterms:medium&gt;Muratura in cotto e decorazioni rinascimentali&lt;/dcterms:medium&gt;
+    &lt;dc:description&gt;Fastosa residenza signorile dei Bentivoglio situata in Strada San Donato a Bologna. Commissionata da Sante Bentivoglio, inaugurata ed ampliata daGiovanni II, fu interamente distrutta nel 1507 dalla popolazione a seguito della cacciata della signoria voluta da Papa Giulio II.&lt;/dc:description&gt;
+    &lt;dc:subject&gt;Rinascimento bolognese&lt;/dc:subject&gt;
+    &lt;dc:subject&gt;Giovanni II Bentivoglio&lt;/dc:subject&gt;
+    &lt;dc:subject&gt;Architettura scomparsa&lt;/dc:subject&gt;
+    &lt;dc:subject&gt;Guasto&lt;/dc:subject&gt;
+    &lt;dc:source&gt;Palazzo Bentivoglio, Strada San Donato, Bologna (Edificio distrutto)&lt;/dc:source&gt;
+    &lt;dc:source xsi:type="dcterms:URI"&gt;https://www.geonames.org/3181928&lt;/dc:source&gt;
+    &lt;dcterms:spatial&gt;Strada San Donato (attuale Via Zamboni / Via del Guasto), Bologna&lt;/dcterms:spatial&gt;
+    &lt;dc:language&gt;it&lt;/dc:language&gt;
+    &lt;dcterms:isPartOf&gt;La Bologna Bentivolesca (1463–1506)&lt;/dcterms:isPartOf&gt;
+    &lt;dc:rights&gt;Tutti i diritti riservati&lt;/dc:rights&gt;
+    &lt;dcterms:license&gt;https://creativecommons.org/licenses/by/4.0/&lt;/dcterms:license&gt;
+
+&lt;/metadata&gt;</code></pre>
+                    </div>
+                </section>
+
+            </div> <!-- CHIUSURA COLONNA SINISTRA -->
+
+            <!-- COLONNA DI DESTRA: ASIDE RELAZIONI DI RETE & CORRELATI -->
+            <div class="col-lg-4">
+                
+                <!-- BLOCCO CONNESSIONI NELLA RETE -->
+                <div class="card card-rinascimento mb-4">
+                    <div class="card-header text-white">
+                        <h3 class="h5 font-weight-bold mb-0 text-white">
+                            <i class="fas fa-project-diagram text-warning mr-2"></i>Connessioni di Rete
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="small text-muted mb-3">Archi della rete grafi collegati a questo nodo:</p>
+                        
+                        <ul class="list-group list-group-flush bg-transparent">
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">residenza di</span>
+                                <a class="font-weight-bold text-danger">Giovanni II Bentivoglio</a>
+                            </li>
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">distrutta per volere di</span>
+                                <a class="font-weight-bold text-danger">Papa Giulio II</a>
+                            </li>
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">distrutta nel</span>
+                                <a class="font-weight-bold text-danger">1507 (Guasto dei Bentivoglio)</a>
+                            </li>
+                        </ul>
+
+                        <div class="mt-4">
+                            <a href="../esplora.html" class="btn btn-rinascimento btn-block btn-sm shadow">
+                                <i class="fas fa-network-wired mr-1"></i> Visualizza il Grafo Interattivo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOCCO ITEM CORRELATI -->
+                <div class="card card-rinascimento">
+                    <div class="card-header text-white">
+                        <h3 class="h5 font-weight-bold mb-0 text-white">
+                            <i class="bi bi-bank text-warning mr-2"></i>Item Correlati
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        
+                        <div class="media mb-3 align-items-center">
+                            <img src="../images/dittico.jpg" class="mr-3 rounded border" width="60" height="60" alt="Dittico Bentivoglio" style="object-fit: cover; border-color: var(--bordo-pergamenato) !important;">
+                            <div class="media-body">
+                                <h4 class="h6 mb-0">
+                                    <a href="Item_07.html" class="text-danger font-weight-bold">Dittico Bentivoglio</a>
+                                </h4>
+                                <small class="text-muted">Ritratto dei signori della dimora</small>
+                            </div>
+                        </div>
+
+                        <div class="media align-items-center">
+                            <img src="../images/San-Giacomo.jpg" class="mr-3 rounded border" width="60" height="60" alt="San Giacomo Maggiore" style="object-fit: cover; border-color: var(--bordo-pergamenato) !important;">
+                            <div class="media-body">
+                                <h4 class="h6 mb-0">
+                                    <a href="item-cappella.html" class="text-danger font-weight-bold">San Giacomo Maggiore</a>
+                                </h4>
+                                <small class="text-muted">Basilica nei pressi del palazzo</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div> <!-- CHIUSURA COLONNA DESTRA -->
+
+        </div> <!-- CHIUSURA ROW -->
+    </main>
+
+    <!-- MODAL PER INGRANDIMENTO IMMAGINE -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background-color: var(--inchiostro-ferrogallico); border: 1px solid var(--oro-rinascimentale);">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title text-warning" style="font-family: 'Cormorant Garamond', serif;">Domus Aurea - Vista ingrandita</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Chiudi">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="../images/Palazzo-Bentivoglio.jpg" class="img-fluid" alt="Ingrandimento Domus Aurea">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="navbar-umanistica text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-3 mb-md-0">
+                    <h5 class="text-warning font-weight-bold mb-1" style="font-family: 'Cormorant Garamond', serif;">
+                        La Bologna Bentivolesca (1463–1506)
+                    </h5>
+                    <p class="small text-light mb-0">
+                        Progetto per il corso di Digital Humanities — Laurea Magistrale in Scienze Storiche. <br>Alma Mater Studiorum, Università di Bologna.<br>
+                        Modellazione semantica su dati di dominio storico e storico-artistico.
+                    </p>
+                </div>
+                <div class="col-md-5 text-md-right">
+                    <span class="badge badge-bentivoglio p-2 mb-2">Standard: DC | TEI XML | CIDOC CRM</span>
+                    <p class="small text-muted mb-0">Licenza Dati: <a href="https://creativecommons.org/licenses/by/4.0/" class="text-warning" target="_blank">CC BY 4.0</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS + jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

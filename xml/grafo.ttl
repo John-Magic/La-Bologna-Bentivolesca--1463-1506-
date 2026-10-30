@@ -1,0 +1,157 @@
+@prefix crm:     <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmgeo:  <http://www.ics.forth.gr/isl/CRMgeo/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix viaf:    <http://viaf.org/viaf/> .
+@prefix wd:      <http://www.wikidata.org/entity/> .
+@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ex:      <http://example.org/bologna-bentivolesca/> .
+
+# =================================================================
+# 1. PERSONE (E21 Person)
+# =================================================================
+
+ex:person_giovanni_ii_bentivoglio a crm:E21_Person ;
+    rdfs:label "Giovanni II Bentivoglio" ;
+    crm:P14i_performed ex:event_committenza_pala , ex:event_nozze_annibale ;
+    owl:sameAs viaf:59942541 .
+
+ex:person_lorenzo_costa a crm:E21_Person ;
+    rdfs:label "Lorenzo Costa" ;
+    crm:P14i_performed ex:event_produzione_pala ;
+    owl:sameAs viaf:47035057 .
+
+ex:person_francesco_francia a crm:E21_Person ;
+    rdfs:label "Francesco Francia" ;
+    crm:P14i_performed ex:event_conio_medaglia ;
+    owl:sameAs viaf:29583492 .
+
+ex:person_sabadino_alienti a crm:E21_Person ;
+    rdfs:label "Giovanni Sabadino degli Arienti" ;
+    crm:P14i_performed ex:event_stregitura_hymenaeus ;
+    owl:sameAs viaf:56649725 .
+
+ex:person_giacomo_gigli a crm:E21_Person ;
+    rdfs:label "Giacomo Gigli" ;
+    owl:sameAs viaf:88998124 .
+
+# =================================================================
+# 2. LUOGHI (E53 Place / SP5 Geometric Place Expression)
+# =================================================================
+
+ex:place_san_giacomo_maggiore a crm:E53_Place ;
+    rdfs:label "Chiesa di San Giacomo Maggiore" ;
+    crmgeo:Q89_falls_within wd:Q1449 ;
+    geo:lat "44.4951"^^xsd:float ;
+    geo:long "11.3486"^^xsd:float ;
+    owl:sameAs wd:Q3670356 .
+
+ex:place_domus_aurea a crm:E53_Place ;
+    rdfs:label "Domus Aurea Bentivoglio" ;
+    crmgeo:Q89_falls_within wd:Q1449 ;
+    geo:lat "44.4962"^^xsd:float ;
+    geo:long "11.3491"^^xsd:float ;
+    owl:sameAs wd:Q3890666 .
+
+ex:place_oratorio_santa_cecilia a crm:E53_Place ;
+    rdfs:label "Oratorio di Santa Cecilia" ;
+    crmgeo:Q89_falls_within wd:Q1449 ;
+    geo:lat "44.4954"^^xsd:float ;
+    geo:long "11.3490"^^xsd:float .
+
+# =================================================================
+# 3. EVENTI (E7 Activity / E12 Production)
+# =================================================================
+
+ex:event_produzione_pala a crm:E12_Production ;
+    rdfs:label "Realizzazione della Pala Bentivoglio" ;
+    crm:P4_has_time_span ex:timespan_1488 ;
+    crm:P14_carried_out_by ex:person_lorenzo_costa ;
+    crm:P7_took_place_at ex:place_san_giacomo_maggiore .
+
+ex:event_committenza_pala a crm:E7_Activity ;
+    rdfs:label "Committenza della Pala Bentivoglio" ;
+    crm:P14_carried_out_by ex:person_giovanni_ii_bentivoglio ;
+    crm:P9_consists_of ex:event_produzione_pala .
+
+ex:event_nozze_annibale a crm:E7_Activity ;
+    rdfs:label "Nozze di Annibale Bentivoglio e Lucrezia d'Este" ;
+    crm:P4_has_time_span ex:timespan_1487 ;
+    crm:P7_took_place_at ex:place_domus_aurea .
+
+ex:event_conio_medaglia a crm:E12_Production ;
+    rdfs:label "Conio della Medaglia di Giovanni II" ;
+    crm:P14_carried_out_by ex:person_francesco_francia .
+
+ex:event_stregitura_hymenaeus a crm:E12_Production ;
+    rdfs:label "Stesura dell'Hymenaeus Bentivolus" ;
+    crm:P14_carried_out_by ex:person_sabadino_alienti ;
+    crm:P4_has_time_span ex:timespan_1487 .
+
+# =================================================================
+# 4. BENI CULTURALI E OPERE (E22 Human-Made Object)
+# =================================================================
+
+ex:item_pala_bentivoglio a crm:E22_Human_Made_Object ;
+    dc:title "Pala Bentivoglio" ;
+    dc:creator "Lorenzo Costa" ;
+    dc:date "1488" ;
+    dc:type "OA" ;
+    dc:format "Dipinto su tavola" ;
+    dc:identifier "IT01" ;
+    crm:P108i_was_produced_by ex:event_produzione_pala ;
+    crm:P53_has_former_or_current_location ex:place_san_giacomo_maggiore .
+
+ex:item_ciclo_santa_cecilia a crm:E22_Human_Made_Object ;
+    dc:title "Ciclo di Affreschi della Vita di Santa Cecilia" ;
+    dc:creator "Lorenzo Costa, Francesco Francia" ;
+    dc:date "1505-1506" ;
+    dc:type "OA" ;
+    dc:identifier "IT02" ;
+    crm:P53_has_former_or_current_location ex:place_oratorio_santa_cecilia .
+
+ex:item_medaglia_giovanni a crm:E22_Human_Made_Object ;
+    dc:title "Medaglia ritratto di Giovanni II Bentivoglio" ;
+    dc:creator "Francesco Francia" ;
+    dc:type "N" ;
+    dc:identifier "IT04" ;
+    crm:P108i_was_produced_by ex:event_conio_medaglia .
+
+# =================================================================
+# 5. FONTI STORICHE ED EDIZIONI DIGITALI (E31 Document / E33)
+# =================================================================
+
+ex:source_hymenaeus_bentivolus a crm:E31_Document , crm:E33_Linguistic_Object ;
+    dc:title "Hymenaeus Bentivolus" ;
+    dc:creator "Giovanni Sabadino degli Arienti" ;
+    dc:date "1487" ;
+    dc:format "text/xml" ;
+    dcterms:identifier "xml/IT06_Hymenaeus_TEI.xml"^^xsd:anyURI ;
+    crm:P70_documents ex:event_nozze_annibale ;
+    crm:P67_refers_to ex:person_giovanni_ii_bentivoglio , ex:place_domus_aurea .
+
+ex:source_cronica_gigli a crm:E31_Document , crm:E33_Linguistic_Object ;
+    dc:title "Cronica di Bologna" ;
+    dc:creator "Giacomo Gigli" ;
+    dc:format "text/xml" ;
+    dcterms:identifier "xml/IT03_Cronica_TEI.xml"^^xsd:anyURI ;
+    crm:P67_refers_to ex:person_giovanni_ii_bentivoglio , ex:place_domus_aurea .
+
+# Macro-raggruppamento E22 per Cytoscape.js UI
+ex:source_hymenaeus_bentivolus rdfs:subClassOf crm:E22_Human_Made_Object .
+ex:source_cronica_gigli rdfs:subClassOf crm:E22_Human_Made_Object .
+
+# =================================================================
+# 6. TIME-SPANS (E52 Time-Span)
+# =================================================================
+
+ex:timespan_1487 a crm:E52_Time_Span ;
+    rdfs:label "Anno 1487" ;
+    crm:P82_at_some_time_within "1487"^^xsd:gYear .
+
+ex:timespan_1488 a crm:E52_Time_Span ;
+    rdfs:label "Anno 1488" ;
+    crm:P82_at_some_time_within "1488"^^xsd:gYear .

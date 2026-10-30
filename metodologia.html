@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologia & Modellazione Concettuale | La Bologna Bentivolesca</title>
+
+    <!-- Bootstrap CSS 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Umanistici Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FontAwesome Scroll Ref -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS Personalizzato Rinascimentale -->
+    <link rel="stylesheet" href="Style v3.css">
+    <!-- Icona Stemma Bentivoglio -->
+    <link rel="icon" type="image/icon" href="images/Arms_of_the_house_of_Bentivoglio.ico">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- NAVBAR HEADER - STILE RILEGATURE IN PELLE ED ORO -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-umanistica sticky-top">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand brand-umanistico text-warning font-weight-bold" href="index.html" style="font-size: 1.5rem;">
+                <i class="fas fa-scroll mr-2"></i>La Bologna Bentivolesca
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto align-items-lg-center">
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="index.html">Home</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="contesto.html"><i class="bi bi-hourglass-split mr-1"></i>Contesto Storico</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="catalogo.html"><i class="bi bi-bank mr-1"></i>Catalogo Item</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="esplora.html"><i class="bi bi-diagram-3 mr-1"></i>Mappa & Grafo</a></li>
+                    <li class="nav-item active mx-lg-1"><a class="nav-link px-lg-3" href="metodologia.html"></i>Metodologia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER SEZIONE -->
+    <header class="py-4 border-bottom" style="background-color: #EFE8D8; border-color: var(--bordo-pergamenato) !important;">
+        <div class="container">
+            <h1 class="h2 mb-1" style="font-family:'Cormorant Garamond'; color: var(--rosso-bentivoglio); font-weight: 700;">Documentazione Metodologica & Architettura dei Dati</h1>
+            <p class="text-muted mb-0 font-italic">Analisi scientifica del modello concettuale, degli standard di descrizione e delle scelte di marcatura semantica adottate nel progetto.</p>
+        </div>
+    </header>
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <main class="py-5 flex-grow-1">
+        <div class="container">
+            <div class="row">
+                
+                <!-- COLONNA PRINCIPALE -->
+                <div class="col-lg-8 mb-4">
+                    
+                    <!-- 1. DOMANDA DI RICERCA -->
+                    <section class="card card-rinascimento shadow-sm mb-4">
+                        <div class="card-body">
+                            <h2 class="h4 text-danger font-weight-bold mb-3" style="font-family:'Cormorant Garamond';">
+                                <i class="fas fa-search-location mr-2"></i>1. Domande di Ricerca & Obiettivi Scientifici
+                            </h2>
+                            <p class="text-justify capilettera">
+                                Il progetto si propone di ricostruire la complessa trama storico-artistica, socio-politica e urbanistica che caratterizzò la Signoria <em>de facto</em> di <strong>Giovanni II Bentivoglio</strong> a Bologna tra il <strong>1463 e il 1506</strong>. La sfida storiografica e informatico-umanistica principale risiede nel superamento della frammentazione tra fonti primarie scritte (cronache rinascimentali), opere d'arte mobili (pittura, scultura, medaglistica) ed entità architettonico-urbane stratificate.
+                            </p>
+                            <p class="text-justify mb-0">
+                                Attraverso la formalizzazione semantica dei dati, l'applicazione intende rispondere ai seguenti quesiti scientifici:
+                            </p>
+                            <ul class="mt-2 text-justify">
+                                <li>In che modo il mecenatismo artistico e architettonico dei Bentivoglio ha ridefinito la topografia sacra e civile della Bologna quattrocentesca?</li>
+                                <li>Come dialogano le fonti narrative primarie (come la <em>Cronica</em> o l'<em>Hymenaeus Bentivolus</em>) con le testimonianze materiali e i beni fisici conservati?</li>
+                                <li>Quali relazioni e reti di influenza intercorrono tra patroni (Giovanni II, Ginevra Sforza), artisti (Lorenzo Costa, Francesco Francia) ed eventi tragici di svolta storica (la Battaglia della Riccardina del 1467, le Nozze di Annibale e Lucrezia del 1487 o la distruzione della Domus Aurea nel 1507)?</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- 2. MODELLO CONCETTUALE (CIDOC CRM) -->
+                    <section class="card card-rinascimento shadow-sm mb-4">
+                        <div class="card-body">
+                            <h2 class="h4 text-danger font-weight-bold mb-3" style="font-family:'Cormorant Garamond';">
+                                <i class="fas fa-sitemap mr-2"></i>2. Modellazione Concettuale (CIDOC CRM & CRMgeo)
+                            </h2>
+                            <p class="text-justify">
+                                Per garantire l'interoperabilità semantica e il rigore ontologico è stato adottato il modello concettuale <strong>CIDOC CRM</strong> (ISO 21127), integrato dall'estensione geospaziale <strong>CRMgeo</strong> (per la mappatura topografica dei luoghi bentivoleschi). L'approccio basato sugli eventi (<em>Event-Centric Modeling</em>) consente di formalizzare la creazione delle opere, la committenza politica e la trasmissione della documentazione storica.
+                            </p>
+
+                            <!-- BOX DI APPROFONDIMENTO SULLE FONTI -->
+                            <div class="card mb-4 shadow-sm border-left-primary bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary">
+                                        <i class="fas fa-book mr-2"></i>Modellazione delle Fonti e dei Manoscritti (CIDOC CRM)
+                                    </h5>
+                                    <p class="card-text text-justify mb-2">
+                                        Ai fini della visualizzazione graficamente omogenea dei nodi all'interno della rete interattiva (sviluppata tramite <code>Cytoscape.js</code>), le fonti scritte e i manoscritti storici (come la <em>Cronica</em> di Giacomo Gigli) sono stati raggruppati sotto la macro-classe di entità <strong>E22 Human-Made Object</strong>.
+                                    </p>
+                                    <p class="card-text text-justify mb-0">
+                                        Tuttavia, a livello di modellazione semantica rigorosa e nei metadati visualizzabili nel pannello analitico di dettaglio, tali risorse mantengono la propria specifica natura di <strong>E31 Document</strong>, esplicitando le relazioni di documentazione storica tramite le proprietà <strong>P70 documents</strong> (documenta) e <strong>P128 carries</strong> (riporta il testo).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Sezione Geolocalizzazione e Cartografia -->
+                            <div class="card mb-4 shadow-sm border-left-info">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info">
+                                        <i class="fas fa-map-marked-alt mr-2"></i>Strategia di Rappresentazione Spaziale e Astrazione Topografica
+                                    </h5>
+                                    <p class="card-text text-justify">
+                                        La modellazione dello spazio urbano si basa sul concetto di <strong>E53 Place</strong> (secondo lo standard CRMgeo), associando ai punti di interesse e agli item culturali le corrispondenti coordinate geografiche (WGS84) e gli identificativi di autorizzazione topografica di <em>GeoNames</em>.
+                                    </p>
+                                    <p class="card-text text-justify">
+                                        Tuttavia, dal punto di vista della cartografia digitale e dell'User Experience (UX), la rigorosa aderenza alle coordinate reali avrebbe generato fenomeni di <em>spatial overcrowding</em> (sovraffollamento di marker) in corrispondenza dei principali poli monumentali della Bologna bentivolesca (es. Palazzo Bentivoglio o San Giacomo Maggiore).
+                                    </p>
+                                    <p class="card-text text-justify mb-0">
+                                        Si è pertanto adottata una <strong>strategia di astrazione e distribuzione spaziale controllata</strong>: gli item sono stati collocati nella mappa secondo un criterio topografico euristico, volto a valorizzare l'intera trama urbana quattrocentesca e a garantire la massima usabilità e leggibilità dell'interfaccia interattiva (Leaflet.js), senza alterare il valore concettuale delle relazioni storiche tra entità e territorio.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 2B. NOTA METODOLOGICA SULL'ARCHIVIO E GLI IDENTIFICATORI -->
+                            <section class="card card-rinascimento shadow-sm mb-4">
+                                <div class="card-body">
+                                    <h3 class="h5 text-danger font-weight-bold mb-3" style="font-family:'Cormorant Garamond';">
+                                        <i class="fas fa-database mr-2"></i>Nota Metodologica: Architettura dell'Archivio e Identificatori Locali
+                                    </h3>
+                                    <p class="text-justify capilettera">
+                                        La costruzione della risorsa digitale si fonda sulla creazione di un <strong>archivio interno normalizzato e indipendente</strong>, disaccoppiato dai sistemi di gestione originari dei singoli istituti conservatori (British Library, Fondazione Zeri, ecc.).
+                                    </p>
+                                    <p class="text-justify">
+                                    Per garantire la stabilità delle rotte di navigazione, la coerenza delle schede e la gestione informatica del catalogo, a ciascuna risorsa culturale è stato assegnato un identificatore locale univoco basato sullo standard Dublin Core (es. <code>dc:identifier IT01</code>, <code>IT02</code>, ecc.).
+                                    </p>
+                                    <p class="text-justify mb-0">
+                                    Tale scelta metodologica non altera né cancella la provenienza originaria dell'oggetto: il legame con gli archivi fisici e le segnature di conservazione è infatti rigorosamente preservato all'interno dei metadati descrittivi avanzati (<code>dcterms:source</code>, <code>dcterms:references</code> e all'interno del blocco <code>msIdentifier</code> dei file di edizione digitale TEI). All'interno del sistema, il dataset in formato CSV assolve alla funzione di matrice strutturata per i beni materiali e le opere d'arte, mentre le fonti testuali complesse (come la <em>Cronica di Giacomo Gigli</em> e l'<em>Hymenaeus Bentivolus</em>) trovano naturale estensione nei file XML-TEI P5 dedicati alla filologia testuale e alla Named Entity Recognition.
+                                    </p>
+                                </div>
+                            </section>
+                            
+                            <!-- TABELLA DI MAPPATURA ONTOLOGICA -->
+                            <div class="table-responsive my-3">
+                                <table class="table table-bordered table-hover bg-white small">
+                                    <thead class="bg-bentivoglio text-white">
+                                        <tr>
+                                            <th>Classe CIDOC CRM</th>
+                                            <th>Istanza Dominio Bentivolesco</th>
+                                            <th>Proprietà / Relazione RDF</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>E22 Human-Made Object</code></td>
+                                            <td>Pala Bentivoglio / Ciclo della Vita di Santa Cecilia / Medaglia di Giovanni II</td>
+                                            <td><code>P108i was produced by</code> (E12 Production)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>E21 Person</code></td>
+                                            <td>Giovanni II Bentivoglio / Lorenzo Costa / Francesco Francia</td>
+                                            <td><code>P14 carried out by</code> (E7 Activity)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>E53 Place</code> / <code>SP5 Geometric Place Express.</code></td>
+                                            <td>Domus Aurea / San Giacomo Maggiore / Oratorio di Santa Cecilia</td>
+                                            <td><code>P7 took place at</code> / <code>Q89 falls within</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>E7 Event</code> / <code>E12 Production</code></td>
+                                            <td>Nozze di Annibale e Lucrezia (1487) / Committenza della Pala (1488)</td>
+                                            <td><code>P4 has time-span</code> (E52 Time-Span)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>E33 Linguistic Object</code> / <code>E31 Document</code></td>
+                                            <td>Hymenaeus Bentivolus (Edizione XML-TEI P5)</td>
+                                            <td><code>P67 refers to</code> (E22 Object / E21 Person)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 3. STANDARDS DI DESCRIZIONE E METADATI -->
+                    <section class="card card-rinascimento shadow-sm mb-4">
+                        <div class="card-body">
+                            <h2 class="h4 text-danger font-weight-bold mb-3" style="font-family:'Cormorant Garamond';">
+                                <i class="fas fa-tags mr-2"></i>3. Standard di Descrizione & Vocabolari Controllati
+                            </h2>
+                            <p class="text-justify">
+                                I dati relativi al catalogo dei 12 beni culturali e delle relative fonti sono stati strutturati secondo standard riconosciuti a livello internazionale per la metadatazione e l'integrazione nel Semantic Web:
+                            </p>
+                            
+                            <ul class="list-unstyled pl-2">
+                                <li class="mb-3">
+                                    <strong class="text-dark"><i class="fas fa-check-circle text-success mr-2"></i>Dublin Core Metadata Element Set (DCMES):</strong> Utilizzato per la descrizione di livello generale degli item in catalogo (proprietà <code>dc:title</code>, <code>dc:creator</code>, <code>dc:date</code>, <code>dc:type</code>, <code>dc:format</code>, <code>dc:identifier</code>, <code>dc:rights</code>).
+                                </li>
+                                <li class="mb-3">
+                                    <strong class="text-dark"><i class="fas fa-check-circle text-success mr-2"></i>Mappatura con Normative Nazionali ICCD:</strong> Gli item di catalogo riflettono la distinzione tipologica delle schede dell'Istituto Centrale per il Catalogo e la Documentazione: 
+                                    <span class="badge badge-secondary ml-1">OA</span> (Opere d'Arte visiva), 
+                                    <span class="badge badge-secondary ml-1">A</span> (Architettura), 
+                                    <span class="badge badge-secondary ml-1">N</span> (Numismatica), 
+                                    <span class="badge badge-secondary ml-1">S</span> (Scultura).
+                                </li>
+                                <li class="mb-3">
+                                    <strong class="text-dark"><i class="fas fa-link text-primary mr-2"></i>Controllo di Autorità & Linked Open Data (LOD):</strong> Per azzerare l'ambiguità informativa, ogni entità (persone, luoghi, fonti, concetti) è riconciliata mediante URIs persistenti dei principali authority file globali:
+                                    <ul class="small mt-2 text-muted pl-4">
+                                        <li><strong>VIAF (Virtual International Authority File):</strong> Identificazione univoca di Giovanni II Bentivoglio (<code>viaf/59942541</code>), Lorenzo Costa (<code>viaf/47035057</code>), ecc.</li>
+                                        <li><strong>Wikidata:</strong> Allineamento geospaziale e storico-biografico per entità fisiche e monumentali.</li>
+                                        <li><strong>Getty AAT (Art & Architecture Thesaurus):</strong> Vocabolario controllato per le tecniche e le tipologie d'oggetto (es. <em>Pala d'altare</em>, <em>Ducato</em>, <em>Affresco</em>).</li>
+                                        <li><strong>Catalogo Fondazione Federico Zeri:</strong> Riferimento critico per le opere d'arte visive bolognesi.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- 4. CODIFICA DEL TESTO XML-TEI -->
+                    <section class="card card-rinascimento shadow-sm mb-4">
+                        <div class="card-body">
+                            <h2 class="h4 text-danger font-weight-bold mb-3" style="font-family:'Cormorant Garamond';">
+                                <i class="fas fa-code mr-2"></i>4. Edizione Digitale & Marcatura Semantica XML-TEI
+                            </h2>
+                            <p class="text-justify">
+                                La fonte storiografica più rilevante del progetto — l'<em>Hymenaeus Bentivolus</em> di Giovanni Sabadino degli Arienti (politico e cronista bolognese attivo sotto i Bentivoglio) — è stata trascritta e marcata secondo lo standard <strong>TEI P5 (Text Encoding Initiative)</strong>.
+                            </p>
+                            <p class="text-justify mb-2">
+                                La marcatura combina due livelli di analisi:
+                            </p>
+                            <ol class="small text-muted pl-3 mb-3">
+                                <li><strong>Marcatura Strutturale e Diplomatica:</strong> Suddivisione in folii (<code>&lt;pb/&gt;</code>), paragrafi (<code>&lt;p&gt;</code>), annotazioni del cronista ed elementi di datazione (<code>&lt;date key="1487-10-10"&gt;</code>).</li>
+                                <li><strong>Marcatura Semantica e Named Entity Recognition (NER):</strong> Identificazione e puntamento di entità storiche nel testo tramite <code>&lt;persName corresp="viaf:..."&gt;</code> per i personaggi, <code>&lt;placeName ref="wikidata:..."&gt;</code> per i luoghi urbani, e <code>&lt;rs type="work"&gt;</code> per i monumenti citati nella cronaca.</li>
+                            </ol>
+                            <p class="text-justify mb-0">
+                                Tali entità marcate all'interno dei file <code>IT03_Cronica_TEI.xml</code> e <code>IT06_Hymenaeus_TEI.xml</code> alimentano direttamente i nodi del grafo interattivo Cytoscape.js presenti nella sezione <em>Mappa & Grafo</em>.
+                            </p>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- SIDEBAR METODOLOGICA -->
+                <div class="col-lg-4 mb-4">
+                    
+                    <!-- BOX STACK TECNOLOGICO -->
+                    <div class="card card-rinascimento shadow-sm mb-4">
+                        <div class="card-header bg-bentivoglio text-white">
+                            <h5 class="card-title mb-0" style="font-family:'Cormorant Garamond';">
+                                <i class="fas fa-laptop-code mr-2"></i>Stack Tecnologico
+                            </h5>
+                        </div>
+                        <div class="card-body small">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center px-0">
+                                    <span><strong>Interface & Layout:</strong></span>
+                                    <span class="badge badge-primary">Bootstrap 4.6.2</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center px-0">
+                                    <span><strong>Tipografia Umanistica:</strong></span>
+                                    <span class="badge badge-dark">Google Fonts</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center px-0">
+                                    <span><strong>Marcatura Testuale:</strong></span>
+                                    <span class="badge badge-warning text-dark">XML-TEI P5</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center px-0">
+                                    <span><strong>Network Analysis:</strong></span>
+                                    <span class="badge badge-success">Cytoscape.js</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center px-0">
+                                    <span><strong>Cartografia Storica:</strong></span>
+                                    <span class="badge badge-info">Leaflet.js + OSM</span>
+                                </li>
+                                <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center px-0">
+                                    <span><strong>Modello Ontologico:</strong></span>
+                                    <span class="badge badge-secondary">CIDOC CRM / CRMgeo</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- BOX DOWNLOAD RISORSE OPEN DATA -->
+                    <div class="card card-rinascimento shadow-sm mb-4">
+                        <div class="card-header bg-dark text-warning">
+                            <h5 class="card-title mb-0" style="font-family:'Cormorant Garamond';">
+                                <i class="fas fa-download mr-2"></i>Risorse Open Data
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="small text-muted mb-3">Scarica i dataset e i file sorgente realizzati per il progetto didattico:</p>
+                            <a href="xml/IT06_Hymenaeus_TEI.xml" download class="btn btn-sm btn-outline-danger btn-block text-left mb-2">
+                                <i class="fas fa-file-code mr-2"></i> Edizione XML-TEI (Hymenaeus Bentivolus)
+                            </a>
+                            <a href="xml/item_catalogo.csv" class="btn btn-sm btn-outline-dark btn-block text-left mb-2">
+                                <i class="fas fa-file-csv mr-2"></i> Dataset Metadati Dublin Core (CSV)
+                            </a>
+                            <a href="xml/grafo.ttl" class="btn btn-sm btn-outline-info btn-block text-left">
+                                <i class="fas fa-project-diagram mr-2"></i> Grafo RDF / Turtle (CIDOC CRM)
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- BOX CREDITI ACCADEMICI -->
+                    <div class="card card-rinascimento shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h5 class="card-title mb-0" style="font-family:'Cormorant Garamond';">
+                                <i class="fas fa-university mr-2"></i>Riferimenti Accademici
+                            </h5>
+                        </div>
+                        <div class="card-body small text-muted">
+                            <p class="mb-1"><strong>Corso:</strong> Digital Humanities e Patrimonio Culturale</p>
+                            <p class="mb-1"><strong>Autore:</strong> Enrico Spadoni</p>
+                            <p class="mb-0"><strong>Università:</strong> Alma Mater Studiorum - Università di Bologna</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER STILE COLOPHON -->
+    <footer class="navbar-umanistica text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-3 mb-md-0">
+                    <h5 class="text-warning font-weight-bold mb-1" style="font-family: 'Cormorant Garamond', serif;">
+                        La Bologna Bentivolesca (1463–1506)
+                    </h5>
+                    <p class="small text-light mb-0">
+                        Progetto per il corso di Digital Humanities — Laurea Magistrale in Scienze Storiche. <br>Alma Mater Studiorum, Università di Bologna.<br>
+                        Modellazione semantica su dati di dominio storico e storico-artistico.
+                    </p>
+                </div>
+                <div class="col-md-5 text-md-right">
+                    <span class="badge badge-bentivoglio p-2 mb-2">Standard: DC | TEI XML | CIDOC CRM</span>
+                    <p class="small text-muted mb-0">Licenza Dati: <a href="https://creativecommons.org/licenses/by/4.0/" class="text-warning" target="_blank">CC BY 4.0</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS + jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Cronica di Giacomo Gigli (1494-1513): edizione digitale</title>
+        <author ref="https://viaf.org/viaf/307376339">Gigli, Giacomo</author>
+        <respStmt>
+          <resp>Trascrizione e codifica TEI a cura di</resp>
+          <name>La Bologna Bentivolesca (1463–1506) - Enrico Spadoni</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Università di Bologna - Corso di Digital Humanities e Patrimonio Culturale</publisher>
+        <pubPlace>Bologna</pubPlace>
+        <date when="2026">2026</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <country>United Kingdom</country>
+            <settlement>London</settlement>
+            <repository ref="https://www.geonames.org/6944331/">British Library</repository>
+            <collection>Additional Manuscripts</collection>
+            <idno>Add MS 25308</idno>
+            <!-- Riferimento incrociato al manoscritto correlato menzionato dal catalogo BL -->
+            <altIdentifier type="crossReference">
+              <idno>Add MS 16523</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <summary>CRONICA di Bologna di Giacomo de' Zilii (Gigli), dal 1494 al 1513. Manoscritto cartaceo mutilo della prima pagina, incentrato sulla fine della signoria bentivolesca e la cacciata di Giovanni II.</summary>
+            <textLang mainLang="ita" otherLangs="lat">Volgare bolognese / Italiano antico</textLang>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc form="codex">
+                <support>Carta (paper)</support>
+                <extent>Small Folio</extent>
+                <condition>Imperfect, wanting the first page (mutilo della prima pagina)</condition>
+              </supportDesc>
+            </objectDesc>
+          </physDesc>
+          <history>
+            <origin>
+              <origDate notBefore="1500" notAfter="1599">XVI secolo</origDate>
+              <origPlace ref="https://www.geonames.org/3181928/">Bologna</origPlace>
+            </origin>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="chapter" n="1506">
+        <head>Della venuta di Papa Giulio II et del parto di Messer Giovanni Bentivoglio</head>
+        <p>In questo anno <date when="1506">1506</date>, alli primi di novembre, il magnifico <persName ref="#bentivoglio_giovanni_2">Messer Giovanni Bentivoglio</persName> con tutta la sua casa partissi di <placeName ref="#bologna">Bologna</placeName>...</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dittico Bentivoglio | La Bologna Bentivolesca</title>
+    
+    <!-- Metadati Dublin Core espressi in HTML5 -->
+    <meta name="DC.title" content="Dittico Bentivoglio (Ritratti di Giovanni II Bentivoglio e Ginevra Sforza)">
+    <meta name="DC.creator" content="de' Roberti, Ercole">
+    <meta name="DC.date" content="1475">
+    <meta name="DC.type" content="Image">
+    <meta name="DC.format" content="Dipinto su tavola / Tempera e olio su legno">
+    <meta name="DC.subject" content="Rinascimento bolognese; Giovanni II Bentivoglio; Ginevra Sforza; Scuola ferrarese; Ritratteistica di corte; Ercole de' Roberti">
+    <meta name="DC.identifier" content="IT07">
+    <meta name="DCTERMS.spatial" content="National Gallery of Art, Washington D.C.">
+    <meta name="DCTERMS.isPartOf" content="Bologna bentivolesca: una rete digitale della signoria">
+
+    <!-- Bootstrap CSS 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons & FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Stile Personalizzato -->
+    <link rel="stylesheet" href="../Style v3.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/Arms_of_the_house_of_Bentivoglio.ico">
+</head>
+<body>
+
+    <!-- NAVBAR HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-umanistica sticky-top">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand brand-umanistico text-warning font-weight-bold" href="../index.html" style="font-size: 1.5rem;">
+                <i class="fas fa-scroll mr-2"></i>La Bologna Bentivolesca
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto align-items-lg-center">
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../index.html">Home</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../contesto.html"><i class="bi bi-hourglass-split mr-1"></i>Contesto Storico</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../catalogo.html"><i class="bi bi-bank mr-1"></i>Catalogo Item</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../esplora.html"><i class="bi bi-diagram-3 mr-1"></i>Mappa & Grafo</a></li>
+                    <li class="nav-item mx-lg-1"><a class="nav-link px-lg-3" href="../metodologia.html">Metodologia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <div class="py-2 border-bottom" style="background-color: var(--bg-card-manoscritto); border-color: var(--bordo-pergamenato) !important;">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 bg-transparent p-0 small" style="font-family: 'Cormorant Garamond', serif; font-size: 1.05rem;">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-danger">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../catalogo.html" class="text-danger">Catalogo</a></li>
+                    <li class="breadcrumb-item active text-muted" aria-current="page">Dittico Bentivoglio</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <main class="container my-5">
+        <div class="row">
+            
+            <!-- COLONNA SINISTRA: Media e Metadati -->
+            <div class="col-lg-8 mb-4">
+                
+                <h1 class="display-4 font-weight-bold mb-1">Dittico Bentivoglio</h1>
+                <p class="lead font-italic text-muted mb-4">Ercole de' Roberti (1475)</p>
+
+                <!-- VISUALIZZATORE MEDIA -->
+                <div class="card card-rinascimento mb-4">
+                    <div class="position-relative text-center rounded-top" style="background-color: var(--inchiostro-ferrogallico);">
+                        <img src="../images/dittico.jpg" class="img-fluid my-2" alt="Dittico di Giovanni II Bentivoglio e Ginevra Sforza" style="max-height: 480px; object-fit: contain;">
+                        
+                        <button class="btn btn-rinascimento btn-sm position-absolute shadow" 
+                                data-toggle="modal" 
+                                data-target="#imageModal"
+                                style="bottom: 15px; right: 15px; z-index: 10;">
+                            <i class="fas fa-expand mr-1"></i> Ingrandisci
+                        </button>
+                    </div>
+                    <div class="card-footer small text-muted" style="background-color: var(--bg-card-manoscritto); border-top: 1px solid var(--bordo-pergamenato);">
+                        <i class="fas fa-image mr-1 text-warning"></i> Ritratti di profilo di Giovanni II Bentivoglio e Ginevra Sforza, National Gallery of Art, Washington D.C.
+                    </div>
+                </div>
+
+                <!-- DESCRIZIONE ESPOSITIVA -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <h2 class="h3 border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        Descrizione dell'Item
+                    </h2>
+                    <p class="capilettera text-justify">
+                        Il <em>Dittico Bentivoglio</em> rappresenta uno degli esempi più rilevanti della ritrattistica di corte tardo-quattrocentesca nell'Italia settentrionale, commissionato al maestro ferrarese <strong>Ercole de' Roberti</strong>. L'opera raffigura Giovanni II Bentivoglio e la consorte Ginevra Sforza affrontati di profilo, secondo il consueto schema d'ispirazione numismatica e umanistica.
+                    </p>
+
+                    <p class="text-justify mb-0">
+                        Sullo sfondo si apre un paesaggio atmosferico continuo che unifica spazialmente le due tavole. La precisione nella resa degli abiti, dei gioielli e dell'acconciatura di Ginevra, unita alla fermezza dell'espressione di Giovanni II, sottolinea la funzione celebrativa e di autoaffermazione dinastica della casata bentivolesca a Bologna.<br> Il dittico inoltre si rifà al celebre <em>Doppio Ritratto dei Duchi di Urbino</em>, realizzato da <strong>Piero della Francesca</strong>, che raffigura Federico da Montefeltro e la consorte Battista Sforza.
+                    </p>
+                </section>
+
+                <!-- METADATI DUBLIN CORE -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <h2 class="h3 border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        Metadati Descrittivi (Dublin Core)
+                    </h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered mb-0" style="border-color: var(--bordo-pergamenato);">
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="w-30" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Identificativo ID</th>
+                                    <td><code class="text-danger">IT07</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Titolo</th>
+                                    <td>Dittico Bentivoglio (Ritratti di Giovanni II Bentivoglio e Ginevra Sforza)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Autore</th>
+                                    <td>
+                                        <a href="https://viaf.org/viaf/79400578/" target="_blank" rel="noopener" class="text-danger font-weight-bold">
+                                            de' Roberti, Ercole <i class="fas fa-external-link-alt small ml-1"></i>
+                                        </a> (VIAF)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Datazione</th>
+                                    <td>1475</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Tipologia Item</th>
+                                    <td><span class="badge badge-bentivoglio">Opera d'Arte</span> / Dipinto su tavola (Dittico)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Soggetti Raffigurati</th>
+                                    <td>Giovanni II Bentivoglio; Ginevra Sforza</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Conservazione</th>
+                                    <td>
+                                        <a href="https://www.geonames.org/4139734/" target="_blank" rel="noopener" class="text-danger font-weight-bold">
+                                            National Gallery of Art, Washington D.C., USA <i class="fas fa-external-link-alt small ml-1"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="background-color: rgba(220, 211, 193, 0.3); color: var(--rosso-bentivoglio); font-family: 'Cormorant Garamond', serif;">Soggetti / Temi</th>
+                                    <td>Giovanni II Bentivoglio, Ginevra Sforza, Ercole de' Roberti, Scuola ferrarese, Ritrattistica rinascimentale</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- ANTEPRIMA CODIFICA XML DC -->
+                <section class="mb-5 p-4 card-rinascimento rounded">
+                    <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
+                        <h2 class="h3 mb-0">Codifica SORGENTE (XML / Dublin Core)</h2>
+                        <a href="../xml/IT07_Dittico.xml" download class="btn btn-outline-danger btn-sm">
+                            <i class="fas fa-download mr-1"></i> Scarica XML DC
+                        </a>
+                    </div>
+                    
+                    <div class="p-3 rounded font-monospace small position-relative overflow-auto" style="background-color: var(--inchiostro-ferrogallico); color: #E6DFD3; max-height: 320px; border: 1px solid var(--oro-rinascimentale);">
+                        <pre class="m-0 text-light"><code>&lt;oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd"&gt;
+  &lt;dc:title&gt;Dittico Bentivoglio (Ritratti di Giovanni II Bentivoglio e Ginevra Sforza)&lt;/dc:title&gt;
+  &lt;dc:creator&gt;de' Roberti, Ercole (1451-1496)&lt;/dc:creator&gt;
+  &lt;dc:contributor&gt;Bentivoglio, Giovanni II (Soggetto e Committente)&lt;/dc:contributor&gt;
+  &lt;dc:contributor&gt;Sforza, Ginevra (Soggetto)&lt;/dc:contributor&gt;
+  &lt;dc:subject&gt;Giovanni II Bentivoglio&lt;/dc:subject&gt;
+  &lt;dc:subject&gt;Ginevra Sforza&lt;/dc:subject&gt;
+  &lt;dc:subject&gt;Ritratteistica rinascimentale&lt;/dc:subject&gt;
+  &lt;dc:subject&gt;Scuola ferrarese&lt;/dc:subject&gt;
+  &lt;dc:description&gt;Coppia di dipinti a tempera e olio su tavola raffiguranti i ritratti di profilo di Giovanni II Bentivoglio e della consorte Ginevra Sforza stagliati su un paesaggio continuo.&lt;/dc:description&gt;
+  &lt;dc:publisher&gt;National Gallery of Art, Washington D.C.&lt;/dc:publisher&gt;
+  &lt;dc:date&gt;1475&lt;/dc:date&gt;
+  &lt;dc:type&gt;Image&lt;/dc:type&gt;
+  &lt;dc:format&gt;Dipinto su tavola / Tempera e olio su legno&lt;/dc:format&gt;
+  &lt;dc:identifier&gt;IT07&lt;/dc:identifier&gt;
+  &lt;dc:source&gt;National Gallery of Art, Washington D.C., USA (Inv. 1952.5.58 / 1952.5.59)&lt;/dc:source&gt;
+  &lt;dc:language&gt;ita&lt;/dc:language&gt;
+  &lt;dc:coverage&gt;Bologna, 1475&lt;/dc:coverage&gt;
+  &lt;dc:rights&gt;https://creativecommons.org/publicdomain/mark/1.0/&lt;/dc:rights&gt;
+&lt;/oai_dc:dc&gt;</code></pre>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- COLONNA DESTRA: Relazioni e Correlati -->
+            <div class="col-lg-4">
+                
+                <!-- RELAZIONI GRAFO -->
+                <div class="card card-rinascimento mb-4">
+                    <div class="card-header text-white">
+                        <h3 class="h5 font-weight-bold mb-0 text-white">
+                            <i class="fas fa-project-diagram text-warning mr-2"></i>Connessioni di Rete
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush bg-transparent">
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">dipinto da</span>
+                                <a class="font-weight-bold text-danger">Ercole de' Roberti</a>
+                            </li>
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">ritrae</span>
+                                <a class="font-weight-bold text-danger">Giovanni II Bentivoglio</a>
+                            </li>
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">ritrae</span>
+                                <a class="font-weight-bold text-danger">Ginevra Sforza</a>
+                            </li>
+                            <li class="list-group-item bg-transparent px-0 border-bottom" style="border-color: var(--bordo-pergamenato);">
+                                <span class="badge badge-bentivoglio mr-1">conservato presso</span>
+                                <a class="font-weight-bold text-danger">National Gallery Washington</a>
+                            </li>
+                        </ul>
+
+                        <div class="mt-4">
+                            <a href="../esplora.html" class="btn btn-rinascimento btn-block btn-sm shadow">
+                                <i class="fas fa-network-wired mr-1"></i> Apri Grafo Interattivo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM CORRELATI -->
+                <div class="card card-rinascimento">
+                    <div class="card-header text-white">
+                        <h3 class="h5 font-weight-bold mb-0 text-white">
+                            <i class="bi bi-bank text-warning mr-2"></i>Item Correlati
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="media mb-3 align-items-center">
+                            <img src="../images/palazzo-bentivoglio.jpg" class="mr-3 rounded border" width="60" height="60" alt="Domus Aurea" style="object-fit: cover; border-color: var(--bordo-pergamenato) !important;">
+                            <div class="media-body">
+                                <h4 class="h6 mb-0">
+                                    <a href="item_02.html" class="text-danger font-weight-bold">Ritratto di Giovanni II</a>
+                                </h4>
+                                <small class="text-muted">Residenza signorile</small>
+                            </div>
+                        </div>
+
+                        <div class="media align-items-center">
+                            <img src="../images/medaglia.jpg" class="mr-3 rounded border" width="60" height="60" alt="Medaglia di Giovanni II" style="object-fit: cover; border-color: var(--bordo-pergamenato) !important;">
+                            <div class="media-body">
+                                <h4 class="h6 mb-0">
+                                    <a href="item_05.html" class="text-danger font-weight-bold">Medaglia di Giovanni II</a>
+                                </h4>
+                                <small class="text-muted">Medaglia realizzata da Sperandio Savelli</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- MODAL INGRANDIMENTO -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background-color: var(--inchiostro-ferrogallico); border: 1px solid var(--oro-rinascimentale);">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title text-warning" style="font-family: 'Cormorant Garamond', serif;">Dittico Bentivoglio - Dettaglio</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Chiudi">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="../images/dittico.jpg" class="img-fluid" alt="Dittico Bentivoglio ingrandito">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="navbar-umanistica text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-3 mb-md-0">
+                    <h5 class="text-warning font-weight-bold mb-1" style="font-family: 'Cormorant Garamond', serif;">
+                        La Bologna Bentivolesca (1463–1506)
+                    </h5>
+                    <p class="small text-light mb-0">
+                        Progetto per il corso di Digital Humanities — Laurea Magistrale in Scienze Storiche. <br>Alma Mater Studiorum, Università di Bologna.<br>
+                        Modellazione semantica su dati di dominio storico e storico-artistico.
+                    </p>
+                </div>
+                <div class="col-md-5 text-md-right">
+                    <span class="badge badge-bentivoglio p-2 mb-2">Standard: DC | TEI XML | CIDOC CRM</span>
+                    <p class="small text-muted mb-0">Licenza Dati: <a href="https://creativecommons.org/licenses/by/4.0/" class="text-warning" target="_blank">CC BY 4.0</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS + jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+
+    <dc:identifier>IT08</dc:identifier>
+    <dc:title>Compianto sul Cristo morto</dc:title>
+    <dc:creator>Niccolò dell'Arca (ca. 1435-1494)</dc:creator>
+    <dcterms:contributor>Bentivoglio, Giovanni II</dcterms:contributor>
+    <dc:date>1463-1490</dc:date>
+    <dcterms:created>1463-1490</dcterms:created>
+    <dc:type>PhysicalObject</dc:type>
+    <dc:type>Scultura</dc:type>
+    <dc:format>Gruppo scultoreo in terracotta con tracce di policromia</dc:format>
+    <dc:description>Gruppo monumentale di sette statue in terracotta a grandezza naturale raffigurante il Compianto sul Cristo morto, celebre per il drammatico realismo e l'impeto espressivo delle figure.</dc:description>
+    <dc:subject>Compianto sul Cristo morto</dc:subject>
+    <dc:subject>Niccolò dell'Arca</dc:subject>
+    <dc:subject>Scultura in terracotta</dc:subject>
+    <dc:subject>Santa Maria della Vita</dc:subject>
+    <dc:subject>Rinascimento bolognese</dc:subject>
+    <dc:source>Santuario di Santa Maria della Vita, Bologna</dc:source>
+    <dcterms:spatial>Strada San Donato (attuale Via Zamboni), Bologna</dcterms:spatial>
+    <dc:language>it</dc:language>
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+    <dc:rights>Tutti i diritti riservati / Pubblico Dominio per l'opera originale</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>

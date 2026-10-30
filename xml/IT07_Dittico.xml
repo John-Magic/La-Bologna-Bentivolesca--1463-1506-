@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+
+    <dc:identifier>IT07</dc:identifier>
+    <dc:title>Dittico Bentivoglio</dc:title>
+    <dcterms:alternative>Ritratti di Giovanni II Bentivoglio e Ginevra Sforza</dcterms:alternative>
+    <dc:creator>de' Roberti, Ercole (1451-1496)</dc:creator>
+    <dcterms:contributor>Bentivoglio, Giovanni II</dcterms:contributor>
+    <dc:contributor>Sforza, Ginevra</dc:contributor>
+    <dc:date>1475</dc:date>
+    <dcterms:created>1475</dcterms:created>
+    <dc:type>Image</dc:type>
+    <dc:type>Dipinto</dc:type>
+    <dc:format>Dipinto su tavola / Tempera e olio su legno</dc:format>
+    <dc:description>Coppia di dipinti a tempera e olio su tavola raffiguranti i ritratti di profilo di Giovanni II Bentivoglio e della consorte Ginevra Sforza, raffigurati affrontati e stagliati su un vasto paesaggio naturalistico.</dc:description>
+    <dc:subject>Giovanni II Bentivoglio</dc:subject>
+    <dc:subject>Ginevra Sforza</dc:subject>
+    <dc:subject>Ritratteistica rinascimentale</dc:subject>
+    <dc:subject>Scuola ferrarese</dc:subject>
+    <dc:subject>Mecenatismo bentivolesco</dc:subject>
+    <dc:source>National Gallery of Art, Washington D.C., USA (Inv. 1952.5.58 / 1952.5.59)</dc:source>
+    <dcterms:spatial>Strada San Donato (attuale Via Zamboni), Bologna</dcterms:spatial>
+    <dc:language>it</dc:language>
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+    <dc:rights>Tutti i diritti riservati / Pubblico Dominio per l'opera originale</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>
