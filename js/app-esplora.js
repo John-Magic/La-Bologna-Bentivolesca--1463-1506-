@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lng: 11.3482,
         ref: "Pala Bentivoglio | Lorenzo Costa",
         descrizione: "Chiesa riferimento dei Bentivoglio, al cui interno si trova il mausoleo di famiglia. La cappella ospita importanti opere d'arte commissionate dai signori, come la Pala Bentivoglio, una delle poche tracce visive dell'esperienza bentivolesca rimasta dopo la cacciata.",
-        link: "./items/item_01.html"
+        link: "./items/Item_01.html"
     },
     {
         titolo: "Porta Galliera",
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lng: 11.3444,
         ref: "Affresco Battaglia della Riccardina (Particolare di B.Colleoni) | Girolamo Romanino",
         descrizione: "Snodo militare nella zona nord dela città e punto di raggruppamento delle truppe bolognesi. Da qui mosse la spedizione per partecipare alla Battaglia della Riccardina (1467). Durante l'assedio del 1506, è stato luogo simbolo della resistenza alle truppe papali.",
-        link: "./items/item_11.html"
+        link: "./items/Item_11.html"
     },
     {
         titolo: "Basilica di San Petronio",
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lng: 11.3431,
         ref: "Hymenaeus Bentivolus | Giovanni Sabadino degli Arienti",
         descrizione: "Cuore civic-religioso di Bologna. Sotto Giovanni II vi lavorarono grandi maestri e fu teatro di solenni cerimonie pubbliche e di Stato.",
-        link: "./items/item_06.html"
+        link: "./items/Item_06.html"
     },
     {
         titolo: "Santuario di Santa Maria della Vita",
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lng: 11.3447,
         ref: "Compianto sul Cristo Morto | Niccolò dell'Arca",
         descrizione: "La chiesa custodisce il celebre 'Compianto sul Cristo Morto' di Niccolò dell'Arca (1463 ca.), capolavoro drammatico della scultura bentivolesca. Santuario e ospedale gestito dalla confraternita dei Battuti, fu un punto di riferimento per l'assistenza cittadina e la devozione mariana sostenuta dalla famiglia Bentivoglio.",
-        link: "./items/item_08.html"
+        link: "./items/Item_08.html"
     },
     {
         titolo: "Porta San Mamolo",
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lng: 11.3402,
         ref: "Cronica | Giacomo Gigli",
         descrizione: "Varco meridionale delle mura di circonvallazione (Terza Cerchia), fondamentale snodo difensivo verso il contado e le colline. Da qui fuggono precipitosamente Giovanni II, Ginevra e la famiglia (assieme a parte della corte) nella notte del 2 novembre 1506",
-        link: "./items/item_03.html"
+        link: "./items/Item_03.html"
     },
     {
         titolo: "Oratorio di Santa Cecilia",
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lng: 11.3486,
         ref: "Ciclio della Vita di Santa Cecilia | F. Francia, A. Aspertini, L. Costa",
         descrizione: "La 'Sistina di Bologna': cappella unifamiliare affrescata nel 1505–1506 per volere di Giovanni II Bentivoglio. Luogo di prestigio e traccia del mecenatismo della famiglia, custodisce un eccezionale ciclo di 10 riquadri sulla vita di Santa Cecilia e San Valeriano, capolavoro collettivo di F. Francia, L. Costa, A. Aspertini e altri artisti molto attivi sul suolo bolognese.",
-        link: "./items/item_04.html"
+        link: "./items/Item_04.html"
     },
     {
         titolo: "Palazzo d'Accursio (Palazzo Comunale)",
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lng: 11.3424,
         ref: "Medaglia di Giovanni II Bentivoglio | Sperandio Savelli",
         descrizione: "Sede del governo cittadino e degli Anziani, contesa tra l'oligarchia bentivolesca e la legazione pontificia. Sebbene Bologna fosse una signoria, per tutta la durata della dinastia Bentivoglio le antiche istituzioni comunali non vennero mai soprresse. Sotto Giovanni II ospitò cerimonie pubbliche, eventi di Stato ed interventi architettonici curati dai maestri di corte.",
-        link: "./items/item_05.html"
+        link: "./items/Item_05.html"
     }
 ];
 
@@ -423,8 +423,8 @@ var dettagliEntita = {
         wikidata: 'Q194996',
         altri: 'Zeri 31730',
         correlati: [
-            { link: './items/item_01.html', icona: 'fas fa-paint-brush text-danger', testo: 'Pala Bentivoglio (Lorenzo Costa, 1488)' },
-            { link: './items/item_02.html', icona: 'fas fa-building text-success', testo: 'Domus Aurea (Palazzo Bentivoglio)' }
+            { link: './items/Item_01.html', icona: 'fas fa-paint-brush text-danger', testo: 'Pala Bentivoglio (Lorenzo Costa, 1488)' },
+            { link: './items/Item_02.html', icona: 'fas fa-building text-success', testo: 'Domus Aurea (Palazzo Bentivoglio)' }
         ]
     },
     'pala_bentivoglio': {
@@ -451,8 +451,8 @@ var dettagliEntita = {
         wikidata: 'Q357807',
         altri: 'n/a',
         correlati: [
-            { link: './items/item_01.html', icona: 'fas fa-paint-brush text-danger', testo: 'Pala Bentivoglio (1488)' },
-            { link: './items/item_04.html', icona: 'fas fa-paint-brush text-danger', testo: 'Ciclo della vita di Santa Cecilia (1505)' },
+            { link: './items/Item_01.html', icona: 'fas fa-paint-brush text-danger', testo: 'Pala Bentivoglio (1488)' },
+            { link: './items/Item_04.html', icona: 'fas fa-paint-brush text-danger', testo: 'Ciclo della vita di Santa Cecilia (1505)' },
         ]
     },
     'domus_aurea': {
@@ -480,7 +480,7 @@ var dettagliEntita = {
         altri: 'n/a',
         correlati: [
             { link: '#', icona: 'fas fa-user text-primary', testo: 'Giovanni II Bentivoglio (Promotore)' },
-            { link: './items/item_02.html', icona: 'fas fa-building text-success', testo: 'Domus Aurea (Luogo dell\'evento)' },
+            { link: './items/Item_02.html', icona: 'fas fa-building text-success', testo: 'Domus Aurea (Luogo dell\'evento)' },
         ]
     },
     'santa_cecilia': {
@@ -494,7 +494,7 @@ var dettagliEntita = {
         altri: 'Zeri 30154',
         correlati: [
             { link: '#', icona: 'fas fa-user text-primary', testo: 'Giovanni II Bentivoglio (Promotore)' },
-            { link: './items/item_09.html', icona: 'fas fa-building text-success', testo: 'Basilica di San Giacomo Maggiore (Sede)' },
+            { link: './items/Item_09.html', icona: 'fas fa-building text-success', testo: 'Basilica di San Giacomo Maggiore (Sede)' },
         ]
     },
     'san_giacomo': {
@@ -507,8 +507,8 @@ var dettagliEntita = {
         wikidata: 'Q2446870',
         altri: 'n/a',
         correlati: [
-            { link: './items/item_04.html', icona: 'fas fa-paint-brush text-danger', testo: 'Ciclo della vita di Santa Cecilia (1505)'},
-            { link: './items/item_01.html', icona: 'fas fa-paint-brush text-danger', testo: 'Pala Bentivoglio (1488)'}
+            { link: './items/Item_04.html', icona: 'fas fa-paint-brush text-danger', testo: 'Ciclo della vita di Santa Cecilia (1505)'},
+            { link: './items/Item_01.html', icona: 'fas fa-paint-brush text-danger', testo: 'Pala Bentivoglio (1488)'}
         ]
     },
     'giulio2': {
@@ -522,7 +522,7 @@ var dettagliEntita = {
         altri: 'n/a',
         correlati: [
             { link: '#', icona: 'fas fa-solid fa-hourglass text-warning', testo: 'Cacciata dei Bentivoglio'},
-            { link: './items/item_02.html', icona: 'fas fa-building text-success', testo: 'Domus Aurea (Demolito)' }
+            { link: './items/Item_02.html', icona: 'fas fa-building text-success', testo: 'Domus Aurea (Demolito)' }
         ]
     },
     'giacomo_gigli': {
@@ -550,7 +550,7 @@ var dettagliEntita = {
         altri: 'n/a',
         correlati: [
             { link: '#', icona: 'fas fa-user text-primary', testo: 'Papa Giulio II (Vincitore)' },
-            { link: './items/item_02.html', icona: 'fas fa-building text-success', testo: 'Domus Aurea (Distrutta)' },
+            { link: './items/Item_02.html', icona: 'fas fa-building text-success', testo: 'Domus Aurea (Distrutta)' },
         ]
     },
     'sabadino_arienti': {
