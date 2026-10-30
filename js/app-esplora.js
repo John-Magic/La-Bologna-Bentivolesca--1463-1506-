@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lng: 11.3490,
         ref: "Domus Aurea",
         descrizione: "Residenza principesca commissionata da Sante Bentivoglio e portata a termine durante la signoria di Giovanni II edificata in via San Donato. Cuore della dinastia e del potere bentivolesco, ospita alcuni dei momenti più importanti delle nozze del 1487 tra Annibale e Lucrezia. Dopo la cacciata dei Bentivoglio, viene distrutta nel 1507 da una sommossa popolare.",
-        link: "../items/item_02.html"
+        link: "./items/Item_02.html"
     },
     {
         titolo: "San Giacomo Maggiore - Cappella Bentivoglio",
