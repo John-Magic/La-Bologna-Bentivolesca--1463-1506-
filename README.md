@@ -1,17 +1,13 @@
 LA BOLOGNA BENTIVOLESCA (1463–1506)
 Una rete digitale di persone, luoghi e patrimonio culturale
 
-Progetto sviluppato per l'esame di Digital Humanities e Patrimonio Culturale (Laurea Magistrale in Scienze Storiche) presso l'Alma Mater Studiorum - Università di Bologna, tenuto dalla Prof.ssa Francesca Tomasi.
-
 Autore: Enrico Spadoni
-
 
 1. Presentazione del Progetto
 ----------------------------------------------------------------------
-Il portale web "La Bologna Bentivolesca" costituisce un sistema informativo di Digital Humanities volto a ricostruire la trama storico-artistica, socio-politica e urbanistica che caratterizzò la signoria de facto di Giovanni II Bentivoglio a Bologna tra il 1463 e il 1506.
+Il portale web "La Bologna Bentivolesca" costituisce un sistema informativo di Digital Humanities volto a ricostruire la trama storico-artistica, socio-politica e urbanistica che caratterizzò la signoria di Giovanni II Bentivoglio a Bologna tra il 1463 e il 1506.
 
-Il progetto supera la tradizionale impostazione enciclopedica adottando un approccio basato sulla modellazione semantica degli eventi e sull'interoperabilità dei dati storici.
-
+Il progetto va oltre la tradizionale impostazione enciclopedica adottando un approccio basato sulla modellazione semantica degli eventi e sull'interoperabilità dei dati storici.
 
 2. Architettura del Sistema e Gestione dei Dati (Archivio Personale)
 ----------------------------------------------------------------------
@@ -23,7 +19,6 @@ La risorsa adotta un'architettura disaccoppiata e rigorosa:
 
 - Modellazione Ontologica (RDF/Turtle & CIDOC CRM): Per superare i limiti relazionali tradizionali, il dominio storico è formalizzato in un grafo di conoscenza RDF basato sullo standard internazionale CIDOC CRM (ISO 21127) e sull'estensione geospaziale CRMgeo.
 
-
 3. Stack Tecnologico
 ----------------------------------------------------------------------
 - Frontend & Interfaccia: HTML5 semantico, CSS3 personalizzato (Estetica Umanistica/Rinascimentale, Style v3.css), Bootstrap 4.6.2.
@@ -32,18 +27,17 @@ La risorsa adotta un'architettura disaccoppiata e rigorosa:
 - Network Analysis & Visualizzazione: Cytoscape.js (per l'esplorazione interattiva del grafo basato su CIDOC CRM).
 - Standard di Interscambio Formale: XML (Dublin Core & TEI P5), RDF/Turtle (grafo.ttl).
 
-
 4. Struttura del Repository
 ----------------------------------------------------------------------
 /
 ├── index.html                   # Homepage del progetto (con metadati DC nel head)
 ├── contesto.html                # Quadro storiografico e timeline interattiva
 ├── catalogo.html                # Catalogo interattivo dei 12 item culturali
-├── esplora.html                 # Visualizzatore unificato (Mappa Leaflet + Grafo Cytoscape)
+├── esplora.html                 # Visualizzatore unificato (Grafo Cytoscape + Mappa Leaflet)
 ├── metodologia.html             # Documentazione scientifica, ontologia e standard
-├── Style v3.css                 # Foglio di stile personalizzato (estetica umanistica)
+├── Style v3.css                 # Foglio di stile personalizzato
 ├── js/
-│   ├── catalogo.js              # Logica di filtraggio, ricerca e paginazione del catalogo
+│   ├── catalogo.js              # Logica dei filtri, ricerca e paginazione del catalogo
 │   └── app-esplora.js           # Configurazione Leaflet, Cytoscape e mapping CIDOC CRM
 ├── items/
 │   ├── Item_01.html             # Scheda analitica item (Pala Bentivoglio - DC)
