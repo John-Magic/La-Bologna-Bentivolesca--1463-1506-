@@ -5,7 +5,7 @@ Autore: Enrico Spadoni
 
 1. Presentazione del Progetto
 ----------------------------------------------------------------------
-Il portale web "La Bologna Bentivolesca" costituisce un sistema informativo di Digital Humanities volto a ricostruire la trama storico-artistica, socio-politica e urbanistica che caratterizzò la signoria di Giovanni II Bentivoglio a Bologna tra il 1463 e il 1506.
+Il portale web "La Bologna Bentivolesca (1463-1506)" costituisce un sistema informativo di Digital Humanities volto a ricostruire la trama storico-artistica, socio-politica e urbanistica che caratterizzò la signoria di Giovanni II Bentivoglio a Bologna tra il 1463 e il 1506.
 
 Il progetto va oltre la tradizionale impostazione enciclopedica adottando un approccio basato sulla modellazione semantica degli eventi e sull'interoperabilità dei dati storici.
 
@@ -17,7 +17,7 @@ La risorsa adotta un'architettura disaccoppiata e rigorosa:
 
 - Edizione Digitale e Filologica (XML-TEI P5): Le fonti manoscritte e narrative complesse (come la Cronica di Giacomo Gigli e l'Hymenaeus Bentivolus di Sabadino degli Arienti) sono trascritte e marcate in XML-TEI, integrando una marcatura strutturale con la Named Entity Recognition (NER) per l'estrazione automatica di attori storici e luoghi.
 
-- Modellazione Ontologica (RDF/Turtle & CIDOC CRM): Per superare i limiti relazionali tradizionali, il dominio storico è formalizzato in un grafo di conoscenza RDF basato sullo standard internazionale CIDOC CRM (ISO 21127) e sull'estensione geospaziale CRMgeo.
+- Modellazione Ontologica (RDF/Turtle & CIDOC CRM): Il dominio storico è formalizzato in un grafo di conoscenza RDF basato sullo standard internazionale CIDOC CRM (ISO 21127) e sull'estensione geospaziale CRMgeo.
 
 3. Stack Tecnologico
 ----------------------------------------------------------------------
@@ -45,7 +45,7 @@ La risorsa adotta un'architettura disaccoppiata e rigorosa:
 ├── xml/
 │   ├── IT01_PalaBentivoglio.xml # File sorgente metadati Dublin Core
 │   ├── IT03_Cronica_TEI.xml     # Edizione digitale XML-TEI (Gigli)
-│   ├── IT06_Hymenaeus_TEI.xml   # Edizione digitale XML-TEI (Sabadino)
+│   ├── IT06_Hymenaeus_TEI.xml   # Edizione digitale XML-TEI (Sabadino Degli Arienti)
 │   ├── item_catalogo.csv        # Dataset tabulare Dublin Core (Archivio interno)
 │   └── grafo.ttl                # Grafo RDF / Turtle (Modello CIDOC CRM)
 └── images/                      # Risorse visive, fotografie storiche e iconografia
