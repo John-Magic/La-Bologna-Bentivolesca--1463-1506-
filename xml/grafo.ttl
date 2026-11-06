@@ -27,16 +27,16 @@ ex:person_lorenzo_costa a crm:E21_Person ;
 ex:person_francesco_francia a crm:E21_Person ;
     rdfs:label "Francesco Francia" ;
     crm:P14i_performed ex:event_conio_medaglia ;
-    owl:sameAs viaf:29583492 .
+    owl:sameAs viaf: 293063947 .
 
 ex:person_sabadino_alienti a crm:E21_Person ;
     rdfs:label "Giovanni Sabadino degli Arienti" ;
     crm:P14i_performed ex:event_stregitura_hymenaeus ;
-    owl:sameAs viaf:56649725 .
+    owl:sameAs viaf:44293577 .
 
 ex:person_giacomo_gigli a crm:E21_Person ;
     rdfs:label "Giacomo Gigli" ;
-    owl:sameAs viaf:88998124 .
+    owl:sameAs viaf:42273028 .
 
 # =================================================================
 # 2. LUOGHI (E53 Place / SP5 Geometric Place Expression)
