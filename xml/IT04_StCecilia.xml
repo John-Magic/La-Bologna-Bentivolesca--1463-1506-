@@ -10,9 +10,13 @@
     <dc:identifier>IT04</dc:identifier>
     <dc:title>Ciclo della vita di Santa Cecilia e San Valeriano</dc:title>
     <dc:creator>Francia, Francesco (1450-1517)</dc:creator>
+    <dc:creator xsi:type="dcterms:URI">http://viaf.org/viaf/293063947</dc:creator>
     <dc:creator>Costa, Lorenzo (1460-1535)</dc:creator>
+    <dc:creator xsi:type="dcterms:URI">http://viaf.org/viaf/47035057</dc:creator>
     <dc:creator>Aspertini, Amico (1474-1552)</dc:creator>
+    <dc:creator xsi:type="dcterms:URI">http://viaf.org/viaf/61817755</dc:creator>
     <dcterms:contributor>Bentivoglio, Giovanni II</dcterms:contributor>
+    <dcterms:contributor xsi:type="dcterms:URI">https://www.wikidata.org/wiki/Q194996</dcterms:contributor>
     <dc:date>1505-1506</dc:date>
     <dcterms:created>1505-1506</dcterms:created>
     <dc:type>Image</dc:type>
