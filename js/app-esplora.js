@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lat: 44.4929,
         lng: 11.3431,
         ref: "Hymenaeus Bentivolus | Giovanni Sabadino degli Arienti",
-        descrizione: "Cuore civic-religioso di Bologna. Sotto Giovanni II vi lavorarono grandi maestri e fu teatro di solenni cerimonie pubbliche e di Stato.",
+        descrizione: "Cuore civico-religioso di Bologna. Sotto Giovanni II vi lavorarono grandi maestri e fu teatro di matrimoni, solenni cerimonie pubbliche e di Stato.",
         link: "./items/Item_06.html"
     },
     {
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lat: 44.4862,
         lng: 11.3402,
         ref: "Cronica | Giacomo Gigli",
-        descrizione: "Varco meridionale delle mura di circonvallazione (Terza Cerchia), fondamentale snodo difensivo verso il contado e le colline. Da qui fuggono precipitosamente Giovanni II, Ginevra e la famiglia (assieme a parte della corte) nella notte del 2 novembre 1506",
+        descrizione: "Varco meridionale delle mura di circonvallazione (Terza Cerchia), fondamentale snodo difensivo verso il contado e le colline. Da qui fuggono precipitosamente Giovanni II e i figli (assieme a parte della corte) nella notte del 2 novembre 1506",
         link: "./items/Item_03.html"
     },
     {
