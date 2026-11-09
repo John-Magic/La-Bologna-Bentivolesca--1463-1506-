@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+
+    <dc:identifier>IT06</dc:identifier>
+    <dc:title>Hymenaeus Bentivolus</dc:title>
+    <dc:creator>Sabadino degli Arienti, Giovanni</dc:creator>
+    <dc:creator xsi:type="dcterms:URI">https://viaf.org/viaf/44293577/</dc:creator>
+    <dcterms:contributor>Bentivoglio, Giovanni II</dcterms:contributor>
+    <dcterms:contributor xsi:type="dcterms:URI">https://www.wikidata.org/wiki/Q194996</dcterms:contributor>
+    <dc:date>1487</dc:date>
+    <dcterms:created>XV secolo</dcterms:created>
+    <dc:type>Text</dc:type>
+    <dc:type>Orazione manoscritta</dc:type>
+    <dc:format>Manoscritto</dc:format>
+    <dc:description>Epitalamio manoscritto, composto in occasione delle nozze tra Annibale II Bentivoglio e Lucrezia d'Este.</dc:description>
+    <dc:subject>Bologna</dc:subject>
+    <dc:subject>Rinascimento bolognese</dc:subject>
+    <dc:subject>Matrimonio di Annibale Bentivoglio e Lucrezia d'Este</dc:subject>
+    <dc:subject>Nozze</dc:subject>
+    <dc:source>Biblioteca Comunale dell'Archiginnasio (BCABo), Bologna</dc:source>
+    <dc:language>lat</dc:language>
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+    <dc:rights>Pubblico Dominio</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>
