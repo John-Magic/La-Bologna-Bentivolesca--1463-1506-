@@ -161,12 +161,19 @@
                 <!-- SEZIONE CODIFICA XML / TEI -->
                 <section class="mb-5 p-4 card-rinascimento rounded">
                     <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3" style="border-color: var(--bordo-pergamenato) !important;">
-                        <h2 class="h3 mb-0">Codifica SORGENTE (XML / TEI)</h2>
-                        <a href="../xml/IT03_Cronica_TEI.xml" download class="btn btn-outline-danger btn-sm">
-                            <i class="fas fa-download mr-1"></i> Scarica File XML TEI
-                        </a>
+                        <h2 class="h3 mb-0">Codifica SORGENTE e Metadati (XML)</h2>
+                        <div>
+                            <!-- Pulsante per scaricare i metadati Dublin Core -->
+                            <a href="../xml/IT03_Cronica.xml" target="_blank" class="btn btn-outline-warning btn-sm mr-2">
+                                <i class="fas fa-file-code mr-1"></i> XML Dublin Core
+                            </a>
+                            <!-- Pulsante per scaricare la TEI -->
+                            <a href="../xml/IT03_Cronica_TEI.xml" download class="btn btn-outline-danger btn-sm">
+                                <i class="fas fa-file-alt mr-1"></i> XML TEI P5
+                            </a>
+                        </div>
                     </div>
-                    <p class="small text-muted mb-3">L'item è codificato secondo lo standard ufficiale <strong>TEI P5</strong> con supporto per la descrizione manoscritta (<code>msDesc</code>) e annotazione delle entità storiche:</p>
+                    <p class="small text-muted mb-3">L'item è descritto formalmente tramite metadati <strong>Dublin Core (Qualified DC)</strong> e codificato nel testo integrale secondo lo standard <strong>TEI P5</strong>:</p>
                     
                     <div class="p-3 rounded font-monospace small position-relative overflow-auto" style="background-color: var(--inchiostro-ferrogallico); color: #E6DFD3; max-height: 360px; border: 1px solid var(--oro-rinascimentale);">
                         <pre class="m-0 text-light"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
