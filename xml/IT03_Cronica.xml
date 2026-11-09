@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://purl.org/dc/elements/1.1/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd
+        http://purl.org/dc/terms/ https://dublincore.org/schemas/xmls/qdc/2008/02/11/dcterms.xsd">
+
+    <dc:identifier>IT03</dc:identifier>
+    <dc:title>Cronica</dc:title>
+    <dc:creator>Gigli, Giacomo</dc:creator>
+    <dcterms:contributor>Bentivoglio, Giovanni II</dcterms:contributor>
+    <dcterms:contributor xsi:type="dcterms:URI">https://www.wikidata.org/wiki/Q194996</dcterms:contributor>
+    <dc:date>1494-1513</dc:date>
+    <dcterms:created>XVI secolo</dcterms:created>
+    <dc:type>Text</dc:type>
+    <dc:type>Cronaca manoscritta</dc:type>
+    <dc:format>Manoscritto</dc:format>
+    <dc:description>Manoscritto redatto dal bolognese Giacomo Gigli, contemporaneo agli ultimi anni della signoria di Giovanni II e ai primi anni della restaurazione pontificia. Manoscritto cartaceo mutilo della prima pagina, incentrato sulla fine della signoria bentivolesca e la cacciata di Giovanni II.</dc:description>
+    <dc:subject>Bologna</dc:subject>
+    <dc:subject>Rinascimento bolognese</dc:subject>
+    <dc:subject>Cacciata dei Bentivoglio</dc:subject>
+    <dc:subject>Cronaca</dc:subject>
+    <dc:source>British Library, Londra</dc:source>
+    <dc:language>it</dc:language>
+    <dcterms:isPartOf>La Bologna Bentivolesca (1463–1506)</dcterms:isPartOf>
+    <dc:rights>Pubblico Dominio</dc:rights>
+    <dcterms:license>https://creativecommons.org/licenses/by/4.0/</dcterms:license>
+
+</metadata>
